@@ -6,13 +6,18 @@ import Button from '@material-ui/core/Button';
 import { Grid } from '@material-ui/core';
 import Headshot from '../../images/headshot.JPG';
 import Waypoint from 'react-waypoint';
+import Brand from '../../images/brand.png';
+import ScrollableAnchor, { configureAnchors } from 'react-scrollable-anchor';
 
 class Header extends Component {
-    
     state = {
-        nav: true
+        nav: false
     }
-    
+
+    componentDidMount(){
+        configureAnchors({ offset: -100, scrollDuration: 500 })
+    }
+   
     testEnter = () =>{
         this.setState({nav: false})
     }
@@ -24,30 +29,27 @@ class Header extends Component {
         return (
             <div className="header">
                 <nav className={this.state.nav ? 'nav nav-fixed': 'nav nav-hidden' }>
-                    <AppBar color='inherit'>
+                    <AppBar >
                         <Toolbar className="main-nav">
-                            <Typography variant="title">
-                                Photos
+                            <Typography className="brand-container" variant="title">
+                              <a href="#home"> <img className="brand" src={Brand} alt=""/></a>
                              </Typography>
                             <div className="left-nav">
                                 <Typography >
-                                    <a href="">About</a>
+                                    <a className="link" href="#skills">Skills</a>
                                 </Typography>
                                 <Typography >
-                                    <a href="">Skills</a>
+                                    <a className="link" href="#projects">Projects</a>
                                 </Typography>
                                 <Typography >
-                                    <a href="">Projects</a>
-                                </Typography>
-                                <Typography >
-                                    <a href="">Contact</a>
+                                    <a className="link" href="#contact">Contact</a>
                                 </Typography>
                             </div>
-
                         </Toolbar>
                     </AppBar>
                 </nav>
-                <div className="header">
+                <div className="header-container">
+                <ScrollableAnchor id={'home'}>
                     <Grid className="grid" container>
                         <Grid className="grid-item" item md={7} >
                             <div className="header-title">
@@ -55,7 +57,8 @@ class Header extends Component {
                                 <h3>Full Stack Web Developer</h3>
                             </div>
                         </Grid>
-                        
+                
+                   
                         <Grid className="grid-item 
                         about-info" item md={5}>
                             <div className="header-image">
@@ -70,7 +73,8 @@ class Header extends Component {
                             onLeave={this.testLeave}
                         />
                     </Grid>
-                    
+
+                    </ScrollableAnchor>
                 </div>
             </div>
         )

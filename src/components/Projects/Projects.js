@@ -1,20 +1,22 @@
 import React from 'react';
-import { Grid, Button} from '@material-ui/core';
+import { Grid, Button } from '@material-ui/core';
 import ReactIcon from '../../images/react-icon.png';
 import jsIcon from '../../images/jsicon.png';
 import nodeIcon from '../../images/node.png';
 import postgresIcon from '../../images/postgresIcon.png';
 import truckingManagerHeader from '../../images/header.png';
 import Carousel from 'nuka-carousel';
-
+import ScrollableAnchor, { configureAnchors } from 'react-scrollable-anchor';
 
 const Projects = () => {
-    mixins: [Carousel.ControllerMixin]
+    configureAnchors({offset: -100, scrollDuration: 500})
     return (
         <section className="section projects">
-            <div className="section-header">
-                <h2>Projects</h2>
-            </div>
+            <ScrollableAnchor id={'projects'}>
+                <div className="section-header">
+                    <h2>Projects</h2>
+                </div>
+            </ScrollableAnchor>
             <Grid className="container" container>
                 <Grid className="grid-item" item xs={12} md={5}>
                     <div className="project-info">
@@ -125,6 +127,7 @@ const Projects = () => {
                     </div>
                 </Grid>
             </Grid>
+
         </section>
     )
 

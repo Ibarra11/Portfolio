@@ -9,12 +9,16 @@ import ReactIcon from '../../images/react-icon.png';
 import jsIcon from '../../images/jsicon.png';
 import nodeIcon from '../../images/node.png';
 import postgresIcon from '../../images/postgresIcon.png';
+import ScrollableAnchor, { configureAnchors } from 'react-scrollable-anchor';
 const Skills = () => {
+    configureAnchors({ offset: -100, scrollDuration: 500 })
     return (
         <section className="section skills">
-            <div className="section-header">
-                <h2>Skills</h2>
-            </div>
+            <ScrollableAnchor id={'skills'}>
+                <div className="section-header">
+                    <h2>Skills</h2>
+                </div>
+            </ScrollableAnchor>
             <div className="skills-content">
                 <Grid className="grid-container" container spacing={16} >
                     <Grid className="grid-item" item xs={12} md={2}>

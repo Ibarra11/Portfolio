@@ -1,10 +1,8 @@
-.projects{
-
-    .grid-item{
+.projects {
+    .grid-item {
         margin-bottom: 2rem;
     }
-
-    .project-info{
+    .project-info {
         border: 1px solid green;
         padding: 1rem;
         height: 100%;
@@ -12,40 +10,34 @@
         flex-direction: column;
         justify-content: space-between;
     }
-    
-    li.slider-slide{
+    li.slider-slide {
         height: 100%;
     }
-    .project-view{
+    .project-view {
         border: 3px solid orange;
-        
     }
-
-    .project-title{
-        h3{
+    .project-title {
+        h3 {
             font-size: 2.5rem;
             text-align: center;
         }
     }
-
-    .project-links{
+    .project-links {
         width: 50%;
         margin: 0 auto;
         display: flex;
         justify-content: space-between;
     }
-
-    .project-tech{
-        h5{
+    .project-tech {
+        h5 {
             font-size: 1.5rem;
         }
-
-        .icon-container{
+        .icon-container {
             width: 60%;
             margin: 0 auto;
-           img{
-               width: 100%;
-           }
+            img {
+                width: 100%;
+            }
         }
     }
 }

@@ -311,10 +311,21 @@ template {
   background-size: cover;
   height: 100vh; }
   .header .nav-hidden {
-    display: none; }
+    opacity: 0;
+    transition: all 1s; }
   .header .nav-fixed {
-    display: block;
-    transition: all 5s; }
+    opacity: 1;
+    transition: all 1s;
+    background-color: #075895; }
+  .header .brand-container {
+    height: 35px; }
+  .header .brand {
+    height: 100%; }
+  .header .link:link, .header .link:visited {
+    color: #F6F6F7;
+    text-decoration: none;
+    font-size: 1.35rem;
+    padding-right: 3rem; }
   .header .grid {
     height: 100vh; }
     .header .grid .grid-item {
@@ -355,7 +366,6 @@ template {
     display: flex;
     justify-content: space-between; }
   .header .left-nav {
-    border: 1px solid red;
     display: flex; }
 
 .skills {
