@@ -1,0 +1,15 @@
+@import 'reset';
+@import "~slick-carousel/slick/slick.css"; 
+@import "~slick-carousel/slick/slick-theme.css";
+@import './components/Header';
+@import './components/Skills';
+@import './components/Projects';
+.section {
+    .section-header {
+        text-align: center;
+    }
+    padding: 5rem 0;
+    h2 {
+        font-size: 4rem;
+    }
+}

@@ -1,0 +1,23 @@
+@import '../variables';
+
+.skills{
+    background-color: #455A64;
+    .skills-content{
+        .grid-container{
+            width: 90%;
+            margin: 0 auto;
+        }
+    }
+
+    .icon-container{
+        border: 1px solid red;
+        img{
+            width: 100%;
+        }
+        h5{
+            position: relative;
+            bottom: 1rem;
+            font-size: 1.5rem;
+        }
+    }
+}
