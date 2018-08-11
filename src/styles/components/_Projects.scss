@@ -1,6 +1,7 @@
 .projects {
     .grid-item {
-        margin-bottom: 2rem;
+        margin-top: 2rem;
+    
     }
     .project-info {
         border: 1px solid green;
@@ -15,6 +16,7 @@
     }
     .project-view {
         border: 3px solid orange;
+        height: 100%;
     }
     .project-title {
         h3 {

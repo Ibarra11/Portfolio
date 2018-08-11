@@ -73,7 +73,6 @@ class Header extends Component {
                             onLeave={this.testLeave}
                         />
                     </Grid>
-
                     </ScrollableAnchor>
                 </div>
             </div>

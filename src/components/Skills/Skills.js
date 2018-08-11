@@ -47,7 +47,6 @@ const Skills = () => {
                     </Grid>
                 </Grid>
             </div>
-
         </section>
     )
 }

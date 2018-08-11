@@ -9,6 +9,7 @@
 @import url(~slick-carousel/slick/slick-theme.css);
 @import url("https://fonts.googleapis.com/css?family=Roboto+Slab:400,700");
 @import url("https://fonts.googleapis.com/css?family=Roboto+Slab:400,700");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab:400,700");
 html {
   line-height: 1.15;
   /* 1 */
@@ -383,7 +384,7 @@ template {
       font-size: 1.5rem; }
 
 .projects .grid-item {
-  margin-bottom: 2rem; }
+  margin-top: 2rem; }
 
 .projects .project-info {
   border: 1px solid green;
@@ -397,7 +398,8 @@ template {
   height: 100%; }
 
 .projects .project-view {
-  border: 3px solid orange; }
+  border: 3px solid orange;
+  height: 100%; }
 
 .projects .project-title h3 {
   font-size: 2.5rem;
@@ -418,9 +420,74 @@ template {
   .projects .project-tech .icon-container img {
     width: 100%; }
 
+.contact {
+  background-color: #406E8E; }
+  .contact .form {
+    padding: 1rem;
+    width: 65%;
+    margin: 0 auto; }
+    .contact .form .form-inputs {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+    .contact .form .form-group {
+      height: 100%;
+      width: 80%;
+      display: flex;
+      flex-direction: column; }
+    .contact .form input {
+      padding: 10px 0;
+      width: 100%;
+      margin-bottom: 1rem;
+      border-radius: 5px; }
+    .contact .form h5 {
+      font-size: 1.25rem;
+      color: #F6F6F7;
+      margin-bottom: 0.75rem; }
+    .contact .form textarea {
+      width: 100%;
+      border-radius: 5px;
+      height: 125px; }
+    .contact .form .form-submit {
+      margin-top: 1rem;
+      display: flex;
+      width: 80%;
+      justify-content: flex-end; }
+    .contact .form button {
+      width: 40%; }
+
+.footer {
+  background-color: #414D59;
+  display: flex;
+  align-items: center;
+  color: #F6F6F7;
+  padding: 20px 0; }
+  .footer p {
+    width: 50%;
+    position: relative;
+    text-align: left;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.25rem; }
+  .footer .media-icons {
+    display: flex;
+    position: absolute;
+    right: 0;
+    margin-right: 3rem; }
+    .footer .media-icons .icon-group a:link,
+    .footer .media-icons .icon-group a:visited {
+      color: #F6F6F7;
+      font-size: 1.75rem;
+      padding-right: 15px;
+      transition: all .5s; }
+    .footer .media-icons .icon-group a:hover,
+    .footer .media-icons .icon-group a:active {
+      color: #4576AA; }
+
 .section {
-  padding: 5rem 0; }
+  padding: 2.5rem 0; }
   .section .section-header {
     text-align: center; }
   .section h2 {
-    font-size: 4rem; }
+    font-size: 4rem;
+    margin-bottom: 1.5rem; }

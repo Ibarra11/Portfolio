@@ -9,7 +9,7 @@ import Carousel from 'nuka-carousel';
 import ScrollableAnchor, { configureAnchors } from 'react-scrollable-anchor';
 
 const Projects = () => {
-    configureAnchors({offset: -100, scrollDuration: 500})
+    configureAnchors({ offset: -100, scrollDuration: 500 })
     return (
         <section className="section projects">
             <ScrollableAnchor id={'projects'}>
@@ -127,7 +127,6 @@ const Projects = () => {
                     </div>
                 </Grid>
             </Grid>
-
         </section>
     )
 
