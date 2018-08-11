@@ -436,7 +436,7 @@ template {
       display: flex;
       flex-direction: column; }
     .contact .form input {
-      padding: 10px 0;
+      padding: 10px 5px;
       width: 100%;
       margin-bottom: 1rem;
       border-radius: 5px; }
@@ -447,7 +447,8 @@ template {
     .contact .form textarea {
       width: 100%;
       border-radius: 5px;
-      height: 125px; }
+      height: 125px;
+      padding: 5px; }
     .contact .form .form-submit {
       margin-top: 1rem;
       display: flex;
