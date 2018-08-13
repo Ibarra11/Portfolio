@@ -1,8 +1,8 @@
 import React from 'react';
 import { Grid, Button } from '@material-ui/core';
 import ReactIcon from '../../images/react-icon.png';
-import jsIcon from '../../images/jsicon.png';
-import nodeIcon from '../../images/node.png';
+import jsIcon from '../../images/js-icon.png';
+import nodeIcon from '../../images/node-icon.png';
 import postgresIcon from '../../images/postgresIcon.png';
 import truckingManagerHeader from '../../images/header.png';
 import Carousel from 'nuka-carousel';
