@@ -57,8 +57,6 @@ class Header extends Component {
                                 <h3>Full Stack Web Developer</h3>
                             </div>
                         </Grid>
-                
-                   
                         <Grid className="grid-item 
                         about-info" item md={5}>
                             <div className="header-image">

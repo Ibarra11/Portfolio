@@ -1,0 +1,7 @@
+@mixin phone-up{
+    @media  (min-width: 640px){
+       .header-container{
+           border: 1px solid green;
+       } 
+    }
+}

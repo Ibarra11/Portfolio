@@ -1,6 +1,5 @@
 .projects {
-
-    .container{
+    .container {
         width: 90%;
         margin: 0 auto;
     }
@@ -71,7 +70,7 @@
             font-size: 2.5rem;
             text-align: center;
         }
-        h5{
+        h5 {
             text-align: center;
             position: relative;
             top: 0.5rem;
@@ -89,10 +88,12 @@
             font-size: 1.5rem;
         }
         .icon-container {
-            width: 60%;
+            height: 3rem ;
             margin: 0 auto;
+            text-align: center;
+            margin-top: 0.75rem;
             img {
-                width: 100%;
+               height: 100%
             }
         }
     }
