@@ -1,7 +1,18 @@
 .projects {
+
+    .container{
+        width: 90%;
+        margin: 0 auto;
+    }
     .grid-item {
         margin-top: 2rem;
-    
+        height: 400px;
+    }
+    .carousel-img {
+        height: 250px;
+        img {
+            height: 100%;
+        }
     }
     .project-info {
         border: 1px solid green;
@@ -15,13 +26,56 @@
         height: 100%;
     }
     .project-view {
-        border: 3px solid orange;
         height: 100%;
+        .carousel-container {
+            border: 5px solid red;
+            height: 100%;
+        }
+        div {
+            height: 100%;
+        }
+        .slider-img {
+            height: 100%;
+            img {
+                height: 100%;
+                width: 100%;
+            }
+        }
+    }
+    .slick-arrow {
+        z-index: 5;
+    }
+    .slick-next {
+        right: 15px;
+    }
+    .slick-prev {
+        left: 20px;
+    }
+    .slick-dots {
+        position: absolute;
+        bottom: 10px;
+        li {
+            button::before {
+                color: #F6F6F9;
+            }
+        }
+        li.slick-active {
+            button:before {
+                color: #f6f6f7;
+                opacity: 1;
+            }
+        }
     }
     .project-title {
         h3 {
             font-size: 2.5rem;
             text-align: center;
+        }
+        h5{
+            text-align: center;
+            position: relative;
+            top: 0.5rem;
+            font-size: 1.125rem;
         }
     }
     .project-links {

@@ -45,13 +45,13 @@ const Skills = () => {
                     <Grid className="grid-item" item xs={12} md={2}>
                         <div className="icon-container">
                             <img src={nodeIcon} alt="" />
-                            <h5>React</h5>
+                            <h5>Node</h5>
                         </div>
                     </Grid>
                     <Grid className="grid-item" item xs={12} md={2}>
                         <div className="icon-container">
                             <img src={postgresIcon} alt="" />
-                            <h5>React</h5>
+                            <h5>PostgreSQL</h5>
                         </div>
                     </Grid>
                     <Grid className="grid-item" item xs={12} md={2}>
@@ -87,7 +87,7 @@ const Skills = () => {
                     <Grid className="grid-item" item xs={12} md={2}>
                         <div className="icon-container">
                             <img src={gitIcon} alt="" />
-                            <h5>GIT</h5>
+                            <h5>Git</h5>
                         </div>
                     </Grid>
                     <Grid className="grid-item" item xs={12} md={2}>

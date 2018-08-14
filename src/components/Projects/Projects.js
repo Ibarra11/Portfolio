@@ -5,10 +5,18 @@ import jsIcon from '../../images/js-icon.png';
 import nodeIcon from '../../images/node-icon.png';
 import postgresIcon from '../../images/postgresIcon.png';
 import truckingManagerHeader from '../../images/header.png';
-import Carousel from 'nuka-carousel';
+// import Carousel from 'nuka-carousel';
+import Slider from 'react-slick';
 import ScrollableAnchor, { configureAnchors } from 'react-scrollable-anchor';
 
 const Projects = () => {
+    var settings = {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1
+    };
     configureAnchors({ offset: -100, scrollDuration: 500 })
     return (
         <section className="section projects">
@@ -22,6 +30,7 @@ const Projects = () => {
                     <div className="project-info">
                         <div className="project-title">
                             <h3>Trucking Manager</h3>
+                            <h5>Personally Developed</h5>
                         </div>
                         <div className="project-description">
                             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur aliquid dolorum nam optio minima maxime.</p>
@@ -63,24 +72,28 @@ const Projects = () => {
                 </Grid>
                 <Grid className="grid-item" item xs={12} md={7}>
                     <div className="project-view">
-                        <Carousel>
-                            <img className="screenshot" src={truckingManagerHeader} />
-                            <img className="screenshot" src={truckingManagerHeader} />
-                            <img className="screenshot" src={truckingManagerHeader} />
-                            <img className="screenshot" src={truckingManagerHeader} />
-                            <img className="screenshot" src={truckingManagerHeader} />
-                        </Carousel>
+                        <Slider  {...settings} >
+                            <div className="slider-img">
+                                <img src={truckingManagerHeader} alt="" />
+                            </div>
+                            <div className="slider-img">
+                                <img src={truckingManagerHeader} alt="" />
+                            </div>
+                            <div className="slider-img">
+                                <img src={truckingManagerHeader} alt="" />
+                            </div>
+                        </Slider>
                     </div>
                 </Grid>
                 <Grid className="grid-item" item xs={12} md={7}>
                     <div className="project-view">
-                        <Carousel>
+                        {/* <Carousel>
                             <img className="screenshot" src={truckingManagerHeader} />
                             <img className="screenshot" src={truckingManagerHeader} />
                             <img className="screenshot" src={truckingManagerHeader} />
                             <img className="screenshot" src={truckingManagerHeader} />
                             <img className="screenshot" src={truckingManagerHeader} />
-                        </Carousel>
+                        </Carousel> */}
                     </div>
                 </Grid>
                 <Grid className="grid-item" item xs={12} md={5}>
