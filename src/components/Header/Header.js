@@ -89,9 +89,7 @@ class Header extends Component {
                         <img src={Headshot} alt="heashto"/>
                     </div>
                 </div>
-                </MediaQuery >
-                
-            
+                </MediaQuery >  
             </div>
         )
     }

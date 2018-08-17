@@ -2,7 +2,11 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
-  "proxy": "http://localhost:3005",
+  "proxy": {
+    "/api": {
+      "target": "http://localhost:3005"
+    }
+  },
   "dependencies": {
     "@material-ui/core": "^1.4.3",
     "axios": "^0.18.0",

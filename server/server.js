@@ -5,6 +5,8 @@ const nodemailer = require('nodemailer');
 require('dotenv').config();
 app.use(bodyParser.json());
 
+
+app.use( express.static( `${__dirname}/../build` ));
 // it is an object that is able to send email
 
 app.post('/api/send', (req, res) => {
@@ -38,9 +40,5 @@ app.post('/api/send', (req, res) => {
     });
 
 })
-
-
-
-
 
 app.listen(3005, () => console.log('Server running'));
