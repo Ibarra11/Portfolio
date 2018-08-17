@@ -1,6 +1,9 @@
 @import '../variables';
 .contact {
-    background-color: $dark-bg;
+    background-color: #404F59;
+    h2{
+        color: $light;
+    }
     .form {
         padding: 1rem;
         width: 65%;

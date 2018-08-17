@@ -1,4 +1,8 @@
 .projects {
+    background-color: #375585;
+    h2{
+        color: $light;
+    }
     .container {
         width: 90%;
         margin: 0 auto;
@@ -15,6 +19,7 @@
     }
     .project-info {
         border: 1px solid green;
+        background-color: #E5E5E5;
         padding: 1rem;
         height: 100%;
         display: flex;

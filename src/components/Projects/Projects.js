@@ -110,21 +110,6 @@ const Projects = () => {
                         </Slider>
                     </div>
                 </Grid>
-                <Grid className="grid-item" item xs={12} md={7}>
-                    <div className="project-view">
-                        <Slider  {...settings} >
-                            <div className="slider-img">
-                                <img src={truckingManagerHeader} alt="" />
-                            </div>
-                            <div className="slider-img">
-                                <img src={truckingManagerHeader} alt="" />
-                            </div>
-                            <div className="slider-img">
-                                <img src={truckingManagerHeader} alt="" />
-                            </div>
-                        </Slider>
-                    </div>
-                </Grid>
                 <Grid className="grid-item" item xs={12} md={5}>
                     <div className="project-info">
                         <div className="project-title">
@@ -169,6 +154,22 @@ const Projects = () => {
                         </div>
                     </div>
                 </Grid>
+                <Grid className="grid-item" item xs={12} md={7}>
+                    <div className="project-view">
+                        <Slider  {...settings} >
+                            <div className="slider-img">
+                                <img src={truckingManagerHeader} alt="" />
+                            </div>
+                            <div className="slider-img">
+                                <img src={truckingManagerHeader} alt="" />
+                            </div>
+                            <div className="slider-img">
+                                <img src={truckingManagerHeader} alt="" />
+                            </div>
+                        </Slider>
+                    </div>
+                </Grid>
+
             </Grid>
         </section>
     )

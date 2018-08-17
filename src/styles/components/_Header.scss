@@ -12,23 +12,22 @@
         transition: all 1s;
         background-color: #075895;
     }
-
-    .brand-container{
+    .brand-container {
         height: 35px;
     }
-
-    .brand{
+    .brand {
         height: 100%;
     }
-
-    .link:link, .link:visited{
+    .link:link,
+    .link:visited {
         color: $light;
         text-decoration: none;
         font-size: 1.35rem;
         padding-right: 3rem;
     }
-   
-
+    .container-full {
+        display: none;
+    }
     .grid {
         height: 100vh;
         .grid-item {
@@ -54,7 +53,7 @@
             margin-top: 1.75rem;
             text-align: center;
             p {
-                font-size: 1.5rem;
+                font-size: 1.35rem;
                 color: $light;
                 letter-spacing: 2px;
             }
@@ -82,5 +81,122 @@
     }
     .left-nav {
         display: flex;
+    } // Responsive styles
+    .header-responsive {
+        border: 1px solid green;
+        height: 100vh;
+        width: 90%;
+        margin: 0 auto;
+        .header-responsive-title {
+            border: 1px solid red;
+            text-align: center;
+            padding-top: 0.5rem;
+            h1 {
+                font-size: 4.5rem;
+                margin-bottom: 0.4rem;
+            }
+            h3 {
+                font-size: 2.5rem;
+            }
+        }
+        .header-responsive-about {
+            border: 1px solid blue;
+            text-align: center;
+            margin: 1.5rem 0;
+            p {
+                font-size: 1.5rem;
+            }
+        }
+        .header-responsive-headshot {
+            height: 40%;
+            text-align: center;
+            img {
+                height: 100%;
+                border-radius: 10px;
+            }
+        }
+    }
+    @media only screen and (max-width: 1080px) {
+        .header-about p {
+            font-size: 1.2rem !important;
+            color: green;
+        }
+        .header-title {
+            h1 {
+                font-size: 4rem;
+            }
+            h3 {
+                font-size: 2.25rem;
+            }
+        }
+    }
+    @media only screen and (max-width: 846px) {
+        .header-title {
+            h1 {
+                font-size: 4rem;
+            }
+            h3 {
+                font-size: 2rem;
+            }
+        }
+    }
+    @media only screen and (max-width: 546px) {
+        .header-responsive-title {
+            h1 {
+                font-size: 4rem !important;
+                margin-bottom: 0.4rem;
+            }
+            h3 {
+                font-size: 2rem !important;
+            }
+        }
+    }
+    @media only screen and (max-width: 438px) {
+        .header-responsive-title {
+            h1 {
+                font-size: 3.75rem !important;
+                margin-bottom: 0.4rem;
+            }
+            h3 {
+                font-size: 1.75rem !important;
+            }
+        }
+        .header-responsive-headshot {
+            height: 40% !important;
+            text-align: center;
+            img {
+                height: 90% !important;
+                border-radius: 10px;
+            }
+        }
+        .header-responsive-about {
+            p {
+                font-size: 1.5rem !important;
+            }
+        }
+    }
+    @media only screen and (max-width: 381px) {
+        .header-responsive-title {
+            h1 {
+                font-size: 3rem !important;
+                margin-bottom: 0.4rem;
+            }
+            h3 {
+                font-size: 1.35rem !important;
+            }
+        }
+        .header-responsive-headshot {
+            height: 40% !important;
+            text-align: center;
+            img {
+                height: 90% !important;
+                border-radius: 10px;
+            }
+        }
+        .header-responsive-about {
+            p {
+                font-size: 1.3rem !important;
+            }
+        }
     }
 }

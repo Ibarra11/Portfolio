@@ -7,9 +7,9 @@
  */
 @import url(~slick-carousel/slick/slick.css);
 @import url(~slick-carousel/slick/slick-theme.css);
-@import url("https://fonts.googleapis.com/css?family=Roboto+Slab:400,700");
-@import url("https://fonts.googleapis.com/css?family=Roboto+Slab:400,700");
-@import url("https://fonts.googleapis.com/css?family=Roboto+Slab:400,700");
+@import url("https://fonts.googleapis.com/css?family=Ubuntu:400,500");
+@import url("https://fonts.googleapis.com/css?family=Ubuntu:400,500");
+@import url("https://fonts.googleapis.com/css?family=Ubuntu:400,500");
 html {
   line-height: 1.15;
   /* 1 */
@@ -322,11 +322,14 @@ template {
     height: 35px; }
   .header .brand {
     height: 100%; }
-  .header .link:link, .header .link:visited {
+  .header .link:link,
+  .header .link:visited {
     color: #F6F6F7;
     text-decoration: none;
     font-size: 1.35rem;
     padding-right: 3rem; }
+  .header .container-full {
+    display: none; }
   .header .grid {
     height: 100vh; }
     .header .grid .grid-item {
@@ -348,7 +351,7 @@ template {
       margin-top: 1.75rem;
       text-align: center; }
       .header .grid .header-about p {
-        font-size: 1.5rem;
+        font-size: 1.35rem;
         color: #F6F6F7;
         letter-spacing: 2px; }
   .header .about-info {
@@ -368,9 +371,82 @@ template {
     justify-content: space-between; }
   .header .left-nav {
     display: flex; }
+  .header .header-responsive {
+    border: 1px solid green;
+    height: 100vh;
+    width: 90%;
+    margin: 0 auto; }
+    .header .header-responsive .header-responsive-title {
+      border: 1px solid red;
+      text-align: center;
+      padding-top: 0.5rem; }
+      .header .header-responsive .header-responsive-title h1 {
+        font-size: 4.5rem;
+        margin-bottom: 0.4rem; }
+      .header .header-responsive .header-responsive-title h3 {
+        font-size: 2.5rem; }
+    .header .header-responsive .header-responsive-about {
+      border: 1px solid blue;
+      text-align: center;
+      margin: 1.5rem 0; }
+      .header .header-responsive .header-responsive-about p {
+        font-size: 1.5rem; }
+    .header .header-responsive .header-responsive-headshot {
+      height: 40%;
+      text-align: center; }
+      .header .header-responsive .header-responsive-headshot img {
+        height: 100%;
+        border-radius: 10px; }
+  @media only screen and (max-width: 1080px) {
+    .header .header-about p {
+      font-size: 1.2rem !important;
+      color: green; }
+    .header .header-title h1 {
+      font-size: 4rem; }
+    .header .header-title h3 {
+      font-size: 2.25rem; } }
+  @media only screen and (max-width: 846px) {
+    .header .header-title h1 {
+      font-size: 4rem; }
+    .header .header-title h3 {
+      font-size: 2rem; } }
+  @media only screen and (max-width: 546px) {
+    .header .header-responsive-title h1 {
+      font-size: 4rem !important;
+      margin-bottom: 0.4rem; }
+    .header .header-responsive-title h3 {
+      font-size: 2rem !important; } }
+  @media only screen and (max-width: 438px) {
+    .header .header-responsive-title h1 {
+      font-size: 3.75rem !important;
+      margin-bottom: 0.4rem; }
+    .header .header-responsive-title h3 {
+      font-size: 1.75rem !important; }
+    .header .header-responsive-headshot {
+      height: 40% !important;
+      text-align: center; }
+      .header .header-responsive-headshot img {
+        height: 90% !important;
+        border-radius: 10px; }
+    .header .header-responsive-about p {
+      font-size: 1.5rem !important; } }
+  @media only screen and (max-width: 381px) {
+    .header .header-responsive-title h1 {
+      font-size: 3rem !important;
+      margin-bottom: 0.4rem; }
+    .header .header-responsive-title h3 {
+      font-size: 1.35rem !important; }
+    .header .header-responsive-headshot {
+      height: 40% !important;
+      text-align: center; }
+      .header .header-responsive-headshot img {
+        height: 90% !important;
+        border-radius: 10px; }
+    .header .header-responsive-about p {
+      font-size: 1.3rem !important; } }
 
 .skills {
-  background-color: #455A64; }
+  background-color: #FEFFFE; }
   .skills .skills-content .grid-container {
     width: 95%;
     margin: 0 auto; }
@@ -384,90 +460,83 @@ template {
       font-size: 1.5rem;
       margin-top: 0.25rem; }
 
-.projects .container {
-  width: 90%;
-  margin: 0 auto; }
-
-.projects .grid-item {
-  margin-top: 2rem;
-  height: 400px; }
-
-.projects .carousel-img {
-  height: 250px; }
-  .projects .carousel-img img {
+.projects {
+  background-color: #375585; }
+  .projects h2 {
+    color: #F6F6F7; }
+  .projects .container {
+    width: 90%;
+    margin: 0 auto; }
+  .projects .grid-item {
+    margin-top: 2rem;
+    height: 400px; }
+  .projects .carousel-img {
+    height: 250px; }
+    .projects .carousel-img img {
+      height: 100%; }
+  .projects .project-info {
+    border: 1px solid green;
+    background-color: #E5E5E5;
+    padding: 1rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+  .projects li.slider-slide {
     height: 100%; }
-
-.projects .project-info {
-  border: 1px solid green;
-  padding: 1rem;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between; }
-
-.projects li.slider-slide {
-  height: 100%; }
-
-.projects .project-view {
-  height: 100%; }
-  .projects .project-view .carousel-container {
-    border: 5px solid red;
+  .projects .project-view {
     height: 100%; }
-  .projects .project-view div {
-    height: 100%; }
-  .projects .project-view .slider-img {
-    height: 100%; }
-    .projects .project-view .slider-img img {
-      height: 100%;
-      width: 100%; }
-
-.projects .slick-arrow {
-  z-index: 5; }
-
-.projects .slick-next {
-  right: 15px; }
-
-.projects .slick-prev {
-  left: 20px; }
-
-.projects .slick-dots {
-  position: absolute;
-  bottom: 10px; }
-  .projects .slick-dots li button::before {
-    color: #F6F6F9; }
-  .projects .slick-dots li.slick-active button:before {
-    color: #f6f6f7;
-    opacity: 1; }
-
-.projects .project-title h3 {
-  font-size: 2.5rem;
-  text-align: center; }
-
-.projects .project-title h5 {
-  text-align: center;
-  position: relative;
-  top: 0.5rem;
-  font-size: 1.125rem; }
-
-.projects .project-links {
-  width: 50%;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between; }
-
-.projects .project-tech h5 {
-  font-size: 1.5rem; }
-
-.projects .project-tech .icon-container {
-  height: 3rem;
-  margin: 0 auto;
-  text-align: center;
-  margin-top: 0.75rem; }
-  .projects .project-tech .icon-container img {
-    height: 100%; }
+    .projects .project-view .carousel-container {
+      border: 5px solid red;
+      height: 100%; }
+    .projects .project-view div {
+      height: 100%; }
+    .projects .project-view .slider-img {
+      height: 100%; }
+      .projects .project-view .slider-img img {
+        height: 100%;
+        width: 100%; }
+  .projects .slick-arrow {
+    z-index: 5; }
+  .projects .slick-next {
+    right: 15px; }
+  .projects .slick-prev {
+    left: 20px; }
+  .projects .slick-dots {
+    position: absolute;
+    bottom: 10px; }
+    .projects .slick-dots li button::before {
+      color: #F6F6F9; }
+    .projects .slick-dots li.slick-active button:before {
+      color: #f6f6f7;
+      opacity: 1; }
+  .projects .project-title h3 {
+    font-size: 2.5rem;
+    text-align: center; }
+  .projects .project-title h5 {
+    text-align: center;
+    position: relative;
+    top: 0.5rem;
+    font-size: 1.125rem; }
+  .projects .project-links {
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between; }
+  .projects .project-tech h5 {
+    font-size: 1.5rem; }
+  .projects .project-tech .icon-container {
+    height: 3rem;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 0.75rem; }
+    .projects .project-tech .icon-container img {
+      height: 100%; }
 
 .contact {
-  background-color: #406E8E; }
+  background-color: #404F59; }
+  .contact h2 {
+    color: #F6F6F7; }
   .contact .form {
     padding: 1rem;
     width: 65%;
@@ -504,7 +573,7 @@ template {
       width: 40%; }
 
 .footer {
-  background-color: #414D59;
+  background-color: #075895;
   display: flex;
   align-items: center;
   color: #F6F6F7;
@@ -538,3 +607,6 @@ template {
   .section h2 {
     font-size: 4rem;
     margin-bottom: 1.5rem; }
+
+font-family {
+  font-family: "Ubuntu", sans-serif; }

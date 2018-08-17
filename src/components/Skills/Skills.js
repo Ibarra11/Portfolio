@@ -11,7 +11,6 @@ import jestIcon from '../../images/jest-icon.png';
 import postmanIcon from '../../images/postman-icon.png';
 import reduxIcon from '../../images/redux-icon.png';
 import gitIcon from '../../images/git-icon.png';
-
 import expressIcon from '../../images/express-icon.png';
 import ScrollableAnchor, { configureAnchors } from 'react-scrollable-anchor';
 const Skills = () => {
