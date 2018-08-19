@@ -1,12 +1,13 @@
 @import '../variables';
 .contact {
     background-color: #404F59;
-    h2{
+    h2 {
         color: $light;
     }
     .form {
-        padding: 1rem;
-        width: 65%;
+        // padding: 1rem;
+        // padding-top: 0;
+        width: 55%;
         margin: 0 auto;
         .form-inputs {
             display: flex;
@@ -15,18 +16,18 @@
         }
         .form-group {
             height: 100%;
-            width: 80%;
+            width: 100%;
             display: flex;
             flex-direction: column;
         }
         input {
-            padding: 10px 5px;
+            padding: 16px 5px;
             width: 100%;
             margin-bottom: 1rem;
             border-radius: 5px;
         }
         h5 {
-            font-size: 1.25rem;
+            font-size: 1.5rem;
             color: $light;
             margin-bottom: 0.75rem;
         }
@@ -39,11 +40,46 @@
         .form-submit {
             margin-top: 1rem;
             display: flex;
-            width: 80%;
+            width: 100%;
             justify-content: flex-end;
         }
         button {
             width: 40%;
+            font-size: 1.25rem;
+        }
+    }
+    @media only screen and (max-width: 876px) {
+        .form {
+            width: 65% !important;
+        }
+        button {
+            border: 1px solid green;
+            width: 50% !important;
+        }
+    }
+
+    @media only screen and (max-width: 592px) {
+        .form {
+            width: 80% !important;
+        }
+        h5{
+            font-size: 1.5rem !important;
+        }
+        button {
+            font-size: 1.25rem !important;
+            width: 60% !important;
+            margin: 0 auto;
+        }
+    }
+
+    @media only screen and (max-width: 592px) {
+        .form {
+            width: 90% !important;
+        }
+        button {
+            font-size: 1.1rem !important;
+            width: 60% !important;
+            margin: 0 auto;
         }
     }
 }

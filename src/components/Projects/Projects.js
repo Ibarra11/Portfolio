@@ -37,7 +37,7 @@ const Projects = () => {
                             <h5>Personally Developed</h5>
                         </div>
                         <div className="project-description">
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur aliquid dolorum nam optio minima maxime.</p>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus, similique repellat! Quo, libero aut? Minus atque rerum veniam adipisci optio obcaecati quidem earum quasi id repellat tempora aperiam, corrupti quisquam quos quae neque placeat qui impedit. Aliquid aliquam pariatur neque rerum, quam debitis, quo deserunt autem facilis natus dolorem qui?</p>
                         </div>
                         <div className="project-tech">
                             <h5>Technoligies Used</h5>
@@ -82,7 +82,6 @@ const Projects = () => {
                                         <img src={expressIcon} alt="PostgreSQL Icon" />
                                     </div>
                                 </Grid>
-
                             </Grid>
                         </div>
                         <div className="project-links">
@@ -95,7 +94,7 @@ const Projects = () => {
                         </div>
                     </div>
                 </Grid>
-                <Grid className="grid-item" item xs={12} md={7}>
+                <Grid className="grid-item project" item xs={12} md={7}>
                     <div className="project-view">
                         <Slider  {...settings} >
                             <div className="slider-img">
@@ -154,7 +153,7 @@ const Projects = () => {
                         </div>
                     </div>
                 </Grid>
-                <Grid className="grid-item" item xs={12} md={7}>
+                <Grid className="grid-item project" item xs={12} md={7}>
                     <div className="project-view">
                         <Slider  {...settings} >
                             <div className="slider-img">

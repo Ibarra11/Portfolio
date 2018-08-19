@@ -488,8 +488,11 @@ template {
     width: 90%;
     margin: 0 auto; }
   .projects .grid-item {
-    margin-top: 2rem;
     height: 400px; }
+  .projects .project {
+    margin-bottom: 2rem; }
+  .projects .project:last-child {
+    margin-bottom: 0; }
   .projects .carousel-img {
     height: 250px; }
     .projects .carousel-img img {
@@ -539,10 +542,13 @@ template {
     top: 0.5rem;
     font-size: 1.125rem; }
   .projects .project-links {
-    width: 50%;
+    width: 75%;
     margin: 0 auto;
     display: flex;
-    justify-content: space-between; }
+    justify-content: center;
+    border: 1px solid blue; }
+    .projects .project-links button {
+      margin-right: 1.25rem; }
   .projects .project-tech h5 {
     font-size: 1.5rem; }
   .projects .project-tech .icon-container {
@@ -552,14 +558,42 @@ template {
     margin-top: 0.75rem; }
     .projects .project-tech .icon-container img {
       height: 100%; }
+  @media screen and (max-width: 958px) {
+    .projects .project-info .project-description {
+      border: 1px solid red;
+      width: 80%;
+      margin: 0 auto; }
+    .projects .project-info .project-tech {
+      border: 1px solid red;
+      width: 80%;
+      margin: 0 auto;
+      text-align: center; }
+      .projects .project-info .project-tech .MuiGrid-container-65 {
+        border: 1px solid orange;
+        display: flex;
+        justify-content: space-between; }
+      .projects .project-info .project-tech .MuiGrid-item-66 {
+        margin-top: 1rem; }
+      .projects .project-info .project-tech .icon-container {
+        height: 3.25rem;
+        margin-top: 0 !important; } }
+  @media screen and (max-width: 824px) {
+    .projects .project-info .project-tech {
+      border: 1px solid red; }
+      .projects .project-info .project-tech .MuiGrid-item-66 {
+        width: 25%; }
+      .projects .project-info .project-tech .icon-container {
+        height: 3.5rem; } }
+  @media screen and (max-width: 610px) {
+    .projects .project-info .project-tech .icon-container {
+      height: 2.75rem !important; } }
 
 .contact {
   background-color: #404F59; }
   .contact h2 {
     color: #F6F6F7; }
   .contact .form {
-    padding: 1rem;
-    width: 65%;
+    width: 55%;
     margin: 0 auto; }
     .contact .form .form-inputs {
       display: flex;
@@ -567,16 +601,16 @@ template {
       align-items: center; }
     .contact .form .form-group {
       height: 100%;
-      width: 80%;
+      width: 100%;
       display: flex;
       flex-direction: column; }
     .contact .form input {
-      padding: 10px 5px;
+      padding: 16px 5px;
       width: 100%;
       margin-bottom: 1rem;
       border-radius: 5px; }
     .contact .form h5 {
-      font-size: 1.25rem;
+      font-size: 1.5rem;
       color: #F6F6F7;
       margin-bottom: 0.75rem; }
     .contact .form textarea {
@@ -587,10 +621,33 @@ template {
     .contact .form .form-submit {
       margin-top: 1rem;
       display: flex;
-      width: 80%;
+      width: 100%;
       justify-content: flex-end; }
     .contact .form button {
-      width: 40%; }
+      width: 40%;
+      font-size: 1.25rem; }
+  @media only screen and (max-width: 876px) {
+    .contact .form {
+      width: 65% !important; }
+    .contact button {
+      border: 1px solid green;
+      width: 50% !important; } }
+  @media only screen and (max-width: 592px) {
+    .contact .form {
+      width: 80% !important; }
+    .contact h5 {
+      font-size: 1.5rem !important; }
+    .contact button {
+      font-size: 1.25rem !important;
+      width: 60% !important;
+      margin: 0 auto; } }
+  @media only screen and (max-width: 592px) {
+    .contact .form {
+      width: 90% !important; }
+    .contact button {
+      font-size: 1.1rem !important;
+      width: 60% !important;
+      margin: 0 auto; } }
 
 .footer {
   background-color: #075895;
