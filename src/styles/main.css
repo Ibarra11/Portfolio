@@ -666,7 +666,7 @@ template {
     display: flex;
     position: absolute;
     right: 0;
-    margin-right: 3rem; }
+    margin-right: 1.5rem; }
     .footer .media-icons .icon-group a:link,
     .footer .media-icons .icon-group a:visited {
       color: #F6F6F7;
@@ -675,7 +675,25 @@ template {
       transition: all .5s; }
     .footer .media-icons .icon-group a:hover,
     .footer .media-icons .icon-group a:active {
-      color: #4576AA; }
+      color: #4576AA;
+      cursor: pointer; }
+  @media only screen and (max-width: 430px) {
+    .footer {
+      flex-direction: column-reverse;
+      align-items: center;
+      justify-content: center;
+      padding: 12px !important; }
+    .footer .media-icons {
+      position: relative !important;
+      margin-right: 0 !important;
+      width: 25%;
+      justify-content: space-around;
+      border: 1px solid orange; }
+      .footer .media-icons a:link, .footer .media-icons a:visited {
+        padding-right: 0 !important; } }
+  @media only screen and (max-width: 330px) {
+    .footer p {
+      font-size: 1.1rem !important; } }
 
 .section {
   padding: 2.5rem 0; }
