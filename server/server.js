@@ -10,7 +10,8 @@ app.use(bodyParser.json());
 app.use( express.static( `${__dirname}/../build` ));
 // it is an object that is able to send email
 app.post('/api/send', (req, res) => {
-    console.log(process.env.USER)
+    console.log('testing')
+    console.log(process.env.USER + 'user');
     let {name, email, message} = req.body;
     let transporter = nodemailer.createTransport({
         host: 'smtp.gmail.com',
