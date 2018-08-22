@@ -9,6 +9,7 @@ import Waypoint from 'react-waypoint';
 import Brand from '../../images/brand.png';
 import ScrollableAnchor, { configureAnchors } from 'react-scrollable-anchor';
 import MediaQuery from 'react-responsive';
+import Zoom from 'react-reveal/Zoom';
 class Header extends Component {
     state = {
         nav: false
@@ -49,6 +50,7 @@ class Header extends Component {
                     </AppBar>
                 </nav>
                 <ScrollableAnchor id={'home'}>
+                <Zoom>
                 <div className="header-container">
                 <MediaQuery query="(min-device-width: 769px)">
                 <Grid className="grid" container>
@@ -74,6 +76,7 @@ class Header extends Component {
                     </Grid>
                     </MediaQuery >
                 </div>
+                </Zoom>
                 </ScrollableAnchor>
                 {/* </MediaQuery> */}
                <MediaQuery query="(max-device-width: 768px)">

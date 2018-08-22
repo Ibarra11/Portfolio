@@ -9,6 +9,7 @@ import reduxIcon from '../../images/redux-icon.png';
 import expressIcon from '../../images/express-icon.png';
 import bootstrapIcon from '../../images/bootstrap-icon.png';
 import truckingManagerHeader from '../../images/header.png';
+import Slide from 'react-reveal/Slide';
 // import Carousel from 'nuka-carousel';
 import Slider from 'react-slick';
 import ScrollableAnchor, { configureAnchors } from 'react-scrollable-anchor';
@@ -30,7 +31,7 @@ const Projects = () => {
                 </div>
             </ScrollableAnchor>
             <Grid className="container" container>
-                <Grid className="grid-item" item xs={12} md={5}>
+                <Grid className="grid-item" item xs={12} md={6}>
                     <div className="project-info">
                         <div className="project-title">
                             <h3>Trucking Manager</h3>
@@ -41,6 +42,7 @@ const Projects = () => {
                         </div>
                         <div className="project-tech">
                             <h5>Technoligies Used</h5>
+                            <Slide left cascade>
                             <Grid container>
                                 <Grid item md={3}>
                                     <div className="icon-container">
@@ -83,6 +85,7 @@ const Projects = () => {
                                     </div>
                                 </Grid>
                             </Grid>
+                            </Slide>
                         </div>
                         <div className="project-links">
                             <Button variant='contained'>
@@ -94,7 +97,7 @@ const Projects = () => {
                         </div>
                     </div>
                 </Grid>
-                <Grid className="grid-item project" item xs={12} md={7}>
+                <Grid className="grid-item project" item xs={12} md={6}>
                     <div className="project-view">
                         <Slider  {...settings} >
                             <div className="slider-img">

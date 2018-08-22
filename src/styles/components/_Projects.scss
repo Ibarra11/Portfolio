@@ -4,11 +4,11 @@
         color: $light;
     }
     .container {
-        width: 90%;
+        width: 95%;
         margin: 0 auto;
     }
     .grid-item {
-        height: 400px;
+        height: 600px;
     }
     .project {
         margin-bottom: 2rem;
@@ -30,6 +30,14 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+
+
+        .project-description{
+            p{
+                font-size: 1.25rem;
+                line-height: 1.5rem;
+            }
+        }
     }
     li.slider-slide {
         height: 100%;
@@ -45,6 +53,7 @@
         }
         .slider-img {
             height: 100%;
+        
             img {
                 height: 100%;
                 width: 100%;
@@ -77,19 +86,20 @@
     }
     .project-title {
         h3 {
-            font-size: 2.5rem;
+            font-size: 2.75rem;
             text-align: center;
         }
         h5 {
             text-align: center;
             position: relative;
-            top: 0.5rem;
-            font-size: 1.125rem;
+            top: 0.2rem;
+            font-size: 1.25rem;
         }
     }
     .project-links {
         width: 75%;
         margin: 0 auto;
+        margin-top: 0.5rem;
         display: flex;
         justify-content: center;
         border: 1px solid blue;
