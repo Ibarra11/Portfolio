@@ -38,7 +38,12 @@ const Projects = () => {
                             <h5>Personally Developed</h5>
                         </div>
                         <div className="project-description">
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus, similique repellat! Quo, libero aut? Minus atque rerum veniam adipisci optio obcaecati quidem earum quasi id repellat tempora aperiam, corrupti quisquam quos quae neque placeat qui impedit. Aliquid aliquam pariatur neque rerum, quam debitis, quo deserunt autem facilis natus dolorem qui?</p>
+                            <p>
+                                Trucking Manager is a web application built to assist trucking companies in efficiently
+                                running their business.  Some features of this application include charts to display
+                                metrics such as expenses, income, payroll, and revenue.  Additionaly, Trucking Manager offers
+                                a dispatch system that sends job information to the drivers.   
+                            </p>
                         </div>
                         <div className="project-tech">
                             <h5>Technoligies Used</h5>

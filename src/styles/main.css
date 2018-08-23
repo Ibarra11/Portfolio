@@ -341,7 +341,7 @@ template {
       justify-content: center;
       align-items: center; }
     .header .grid .header-image {
-      height: 50%;
+      height: 57%;
       display: flex;
       justify-content: center; }
       .header .grid .header-image img {
@@ -488,7 +488,7 @@ template {
     width: 95%;
     margin: 0 auto; }
   .projects .grid-item {
-    height: 600px; }
+    height: 475px; }
   .projects .project {
     margin-bottom: 2rem; }
   .projects .project:last-child {
@@ -498,7 +498,6 @@ template {
     .projects .carousel-img img {
       height: 100%; }
   .projects .project-info {
-    border: 1px solid green;
     background-color: #E5E5E5;
     padding: 1rem;
     height: 100%;
@@ -549,8 +548,7 @@ template {
     margin: 0 auto;
     margin-top: 0.5rem;
     display: flex;
-    justify-content: center;
-    border: 1px solid blue; }
+    justify-content: center; }
     .projects .project-links button {
       margin-right: 1.25rem; }
   .projects .project-tech h5 {

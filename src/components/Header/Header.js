@@ -50,7 +50,7 @@ class Header extends Component {
                     </AppBar>
                 </nav>
                 <ScrollableAnchor id={'home'}>
-                <Zoom>
+                <Zoom duration={2000}>
                 <div className="header-container">
                 <MediaQuery query="(min-device-width: 769px)">
                 <Grid className="grid" container>
