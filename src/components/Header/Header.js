@@ -12,9 +12,9 @@ import MediaQuery from 'react-responsive';
 import Zoom from 'react-reveal/Zoom';
 class Header extends Component {
     state = {
-        nav: false
+        nav: false,
+        displayNav: false
     }
-
     componentDidMount(){
         configureAnchors({ offset: -100, scrollDuration: 500 })
     }
@@ -23,33 +23,38 @@ class Header extends Component {
         this.setState({nav: false})
     }
 
-    testLeave = () =>{
+    testLeave = (props) =>{
+     if(props.currentPosition !== 'below'){
         this.setState({nav: true})
+     } 
+    }
+
+    displayNav = () =>{
+        this.setState({displayNav: !this.state.displayNav})
     }
     render() {
         return (
+            <ScrollableAnchor id={'home'}>
             <div className="header">
-                <nav className={this.state.nav ? 'nav nav-fixed': 'nav nav-hidden' }>
-                    <AppBar >
-                        <Toolbar className="main-nav">
-                            <Typography className="brand-container" variant="title">
-                              <a href="#home"> <img className="brand" src={Brand} alt=""/></a>
-                             </Typography>
-                            <div className="left-nav">
-                                <Typography >
-                                    <a className="link" href="#skills">Skills</a>
-                                </Typography>
-                                <Typography >
-                                    <a className="link" href="#projects">Projects</a>
-                                </Typography>
-                                <Typography >
-                                    <a className="link" href="#contact">Contact</a>
-                                </Typography>
-                            </div>
-                        </Toolbar>
-                    </AppBar>
-                </nav>
-                <ScrollableAnchor id={'home'}>
+            <nav className={this.state.nav ? 'nav nav-fixed': 'nav nav-hidden' }>
+                <div className="nav-brand">
+                <a href="#home"><img src={Brand} alt=""/></a>
+                </div>
+                <div className="hamburger-menu">
+                    <i onClick={this.displayNav} className="fa fa-bars"></i>
+                </div>
+              <div className="nav-links" >
+                <a className="nav-link" href="#skills">Skills</a>
+                <a className="nav-link" href="#projects">Projects</a>
+                <a className="nav-link" href="#skills">Contact</a>
+              </div>
+              <div className={this.state.displayNav ? "mobile-links": "none" } >
+                <a className="nav-link" href="#skills">Skills</a>
+                <a className="nav-link" href="#projects">Projects</a>
+                <a className="nav-link" href="#skills">Contact</a>
+              </div>
+            </nav>
+
                 <Zoom duration={2000}>
                 <div className="header-container">
                 <MediaQuery query="(min-device-width: 769px)">
@@ -69,16 +74,10 @@ class Header extends Component {
                                 <p className="about-text-">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda obcaecati laborum numquam accusantium, dignissimos cumque voluptate tenetur odio commodi id tempora temporibus asperiores vitae doloremque repudiandae eos fugiat accusamus cum?</p>
                             </div>
                         </Grid>
-                        <Waypoint className="border" topOffset='60%'
-                            onEnter={this.testEnter}
-                            onLeave={this.testLeave}
-                        />
                     </Grid>
-                    </MediaQuery >
+                    </MediaQuery >  
                 </div>
                 </Zoom>
-                </ScrollableAnchor>
-                {/* </MediaQuery> */}
                <MediaQuery query="(max-device-width: 768px)">
                 <div className="header-responsive">
                 <div className="header-responsive-title">
@@ -90,10 +89,15 @@ class Header extends Component {
                     </div>
                     <div className="header-responsive-headshot">
                         <img src={Headshot} alt="heashto"/>
-                    </div>
+                    </div> 
                 </div>
-                </MediaQuery >  
+                </MediaQuery > 
+                <Waypoint className="border" topOffset='60%'
+                            onEnter={this.testEnter}
+                            onLeave={this.testLeave}
+                        />  
             </div>
+            </ScrollableAnchor>
         )
     }
 

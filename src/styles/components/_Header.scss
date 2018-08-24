@@ -3,11 +3,52 @@
     background-image: url('../images/bg.jpg');
     background-size: cover;
     height: 100vh;
+    .nav {
+        .none {
+            opacity: 0;
+            max-height: 0;
+            transition: max-height 2s;
+        }
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        padding: 16px 20px;
+        z-index: 20;
+        .hamburger-menu {
+            display: none;
+        }
+        .nav-brand {
+            height: 40px;
+            img {
+                height: 100%;
+                width: auto;
+            }
+        }
+        .nav-links,
+        .mobile-links {
+            .nav-link:link,
+            .nav-link:visited {
+                text-decoration: none;
+                text-transform: uppercase;
+                padding-left: 30px;
+                color: $light;
+                font-size: 1.35rem;
+            }
+            .nav-link:hover,
+            .nav-link:active {
+                cursor: pointer;
+            }
+        }
+    }
     .nav-hidden {
         opacity: 0;
+        position: absolute;
+        background-color: transparent;
         transition: all 1s;
     }
     .nav-fixed {
+        position: fixed;
         opacity: 1;
         transition: all 1s;
         background-color: #075895;
@@ -17,16 +58,6 @@
     }
     .brand {
         height: 100%;
-    }
-    .link:link,
-    .link:visited {
-        color: $light;
-        text-decoration: none;
-        font-size: 1.35rem;
-        padding-right: 3rem;
-    }
-    .container-full {
-        display: none;
     }
     .grid {
         height: 100vh;
@@ -86,7 +117,6 @@
         border: 1px solid green;
         background-color: rgba($color: #075895, $alpha: 0.9);
         height: 100vh;
-       
         .header-responsive-title {
             width: 90%;
             margin: 0 auto;
@@ -103,7 +133,6 @@
         }
         .header-responsive-about {
             width: 90%;
-           
             border: 1px solid blue;
             text-align: center;
             margin: 1.5rem auto;
@@ -136,13 +165,42 @@
             }
         }
     }
-    @media only screen and (max-width: 846px) {
-        .header-title {
-            h1 {
-                font-size: 4rem;
+    @media only screen and (max-width: 790px) {
+        .nav-brand {
+            height: 35px !important;
+        }
+        .nav-link {
+            font-size: 1.25rem !important;
+        }
+    }
+    @media only screen and (max-width: 666px) {
+        .nav {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .nav-links {
+            // display: none !important;
+            display: none !important;
+        }
+        .mobile-links {
+            display: flex;
+            justify-content: space-between !important; // flex-direction: column !important;
+            width: 75%;
+            margin: 0 auto;
+            opacity: 1;
+            transition: all 1s;
+            .nav-link {
+                padding-left: 0 !important;
+                margin-top: 15px;
+                font-size: 1.35rem !important;
             }
-            h3 {
-                font-size: 2rem;
+        }
+        .hamburger-menu {
+            position: absolute !important;
+            display: block !important;
+            right: 25px;
+            i {
+                font-size: 2.25rem;
             }
         }
     }
