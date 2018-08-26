@@ -10,6 +10,7 @@ import expressIcon from '../../images/express-icon.png';
 import bootstrapIcon from '../../images/bootstrap-icon.png';
 import truckingManagerHeader from '../../images/header.png';
 import Slide from 'react-reveal/Slide';
+import MediaQuery from 'react-responsive';
 // import Carousel from 'nuka-carousel';
 import Slider from 'react-slick';
 import ScrollableAnchor, { configureAnchors } from 'react-scrollable-anchor';
@@ -31,152 +32,145 @@ const Projects = () => {
                 </div>
             </ScrollableAnchor>
             <Grid className="container" container>
-                <Grid className="grid-item" item xs={12} md={6}>
-                    <div className="project-info">
-                        <div className="project-title">
-                            <h3>Trucking Manager</h3>
-                            <h5>Personally Developed</h5>
+                <MediaQuery query="(max-device-width: 972px)">
+                    <div className="card">
+                        <div className="card-image ">
+                            {/* <img src={truckingManagerHeader} alt="" /> */}
+                            <div className="project-view">
+                                <Slider  {...settings} >
+                                    <div className="slider-img">
+                                        <img src={truckingManagerHeader} alt="" />
+                                    </div>
+                                    <div className="slider-img">
+                                        <img src={truckingManagerHeader} alt="" />
+                                    </div>
+                                    <div className="slider-img">
+                                        <img src={truckingManagerHeader} alt="" />
+                                    </div>
+                                </Slider>
+                            </div>
                         </div>
-                        <div className="project-description">
-                            <p>
-                                Trucking Manager is a web application built to assist trucking companies in efficiently
-                                running their business.  Some features of this application include charts to display
-                                metrics such as expenses, income, payroll, and revenue.  Additionaly, Trucking Manager offers
-                                a dispatch system that sends job information to the drivers.   
-                            </p>
-                        </div>
-                        <div className="project-tech">
-                            <h5>Technoligies Used</h5>
-                            <Slide left cascade>
-                            <Grid container>
-                                <Grid item md={3}>
-                                    <div className="icon-container">
-                                        <img src={ReactIcon} alt="react icon" />
-                                    </div>
-                                </Grid>
-                                <Grid item md={3}>
-                                    <div className="icon-container">
-                                        <img src={reduxIcon} alt="redux icon" />
-                                    </div>
-                                </Grid>
-                                <Grid item md={3}>
-                                    <div className="icon-container">
-                                        <img src={jsIcon} alt="JavaScript Icon" />
-                                    </div>
-                                </Grid>
-                                <Grid item md={3}>
-                                    <div className="icon-container">
-                                        <img src={bootstrapIcon} alt="Sass Icon" />
-                                    </div>
-                                </Grid>
-                                <Grid item md={3}>
-                                    <div className="icon-container">
-                                        <img src={sassIcon} alt="Sass Icon" />
-                                    </div>
-                                </Grid>
-                                <Grid item md={3}>
-                                    <div className="icon-container">
-                                        <img src={nodeIcon} alt="Node Icon" />
-                                    </div>
-                                </Grid>
-                                <Grid item md={3}>
-                                    <div className="icon-container">
-                                        <img src={postgresIcon} alt="PostgreSQL Icon" />
-                                    </div>
-                                </Grid>
-                                <Grid item md={3}>
-                                    <div className="icon-container">
-                                        <img src={expressIcon} alt="PostgreSQL Icon" />
-                                    </div>
-                                </Grid>
-                            </Grid>
-                            </Slide>
-                        </div>
-                        <div className="project-links">
-                            <Button variant='contained'>
-                                Github
+                        <div className="card-text">
+                            <div className="card-header">
+                                <h3>Trucking Manager</h3>
+                                <h5>Personally Developed</h5>
+                            </div>
+                            <div className="card-body">
+                                <p>
+                                    Trucking Manager is a web application built to assist trucking companies in efficiently
+                                    running their business.  Some features of this application include charts to display
+                                    metrics such as expenses, income, payroll, and revenue.  Additionaly, Trucking Manager offers
+                                    a dispatch system that sends job information to the drivers.
+                                    </p>
+                            </div>
+                            <div className="card-buttons">
+                                <Button variant='contained'>
+                                    Github
                             </Button>
-                            <Button variant='contained'>
-                                Live Site
+                                <Button variant='contained'>
+                                    Live Site
                             </Button>
+                            </div>
                         </div>
                     </div>
-                </Grid>
-                <Grid className="grid-item project" item xs={12} md={6}>
-                    <div className="project-view">
-                        <Slider  {...settings} >
-                            <div className="slider-img">
-                                <img src={truckingManagerHeader} alt="" />
-                            </div>
-                            <div className="slider-img">
-                                <img src={truckingManagerHeader} alt="" />
-                            </div>
-                            <div className="slider-img">
-                                <img src={truckingManagerHeader} alt="" />
-                            </div>
-                        </Slider>
-                    </div>
-                </Grid>
-                <Grid className="grid-item" item xs={12} md={5}>
-                    <div className="project-info">
-                        <div className="project-title">
-                            <h3>Clonepen</h3>
-                            <h5>Group Project</h5>
-                        </div>
-                        <div className="project-description">
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur aliquid dolorum nam optio minima maxime.</p>
-                        </div>
-                        <div className="project-tech">
-                            <h5>Technoligies Used</h5>
-                            <Grid container>
-                                <Grid item md={3}>
-                                    <div className="icon-container">
-                                        <img src={ReactIcon} alt="" />
-                                    </div>
-                                </Grid>
-                                <Grid item md={3}>
-                                    <div className="icon-container">
-                                        <img src={jsIcon} alt="" />
-                                    </div>
-                                </Grid>
-                                <Grid item md={3}>
-                                    <div className="icon-container">
-                                        <img src={nodeIcon} alt="" />
-                                    </div>
-                                </Grid>
-                                <Grid item md={3}>
-                                    <div className="icon-container">
-                                        <img src={postgresIcon} alt="" />
-                                    </div>
-                                </Grid>
-                            </Grid>
-                        </div>
-                        <div className="project-links">
-                            <Button variant='contained'>
-                                Github
-                            </Button>
-                            <Button variant='contained'>
-                                Live Site
-                            </Button>
-                        </div>
-                    </div>
-                </Grid>
-                <Grid className="grid-item project" item xs={12} md={7}>
-                    <div className="project-view">
-                        <Slider  {...settings} >
-                            <div className="slider-img">
-                                <img src={truckingManagerHeader} alt="" />
-                            </div>
-                            <div className="slider-img">
-                                <img src={truckingManagerHeader} alt="" />
-                            </div>
-                            <div className="slider-img">
-                                <img src={truckingManagerHeader} alt="" />
-                            </div>
-                        </Slider>
-                    </div>
-                </Grid>
 
+                </MediaQuery>
+                <MediaQuery query="(min-device-width: 973px)">
+                    <Grid className="grid-item" item xs={12}>
+                        <div className="project-info">
+                            <div className="project-title">
+                                <h3>Trucking Manager</h3>
+                                <h5>Personally Developed</h5>
+                            </div>
+                            <Grid container>
+                                <Grid className="project-content" item xs={6}>
+                                    <div className="project-description">
+                                        <p>
+                                            Trucking Manager is a web application built to assist trucking companies in efficiently
+                                            running their business.  Some features of this application include charts to display
+                                            metrics such as expenses, income, payroll, and revenue.  Additionaly, Trucking Manager offers
+                                            a dispatch system that sends job information to the drivers.
+                            </p>
+                                    </div>
+                                    <div className="project-tech">
+                                        <h5>Technoligies Used</h5>
+                                        <Slide left cascade>
+                                            <Grid container>
+                                                <Grid item md={3}>
+                                                    <div className="icon-container">
+                                                        <img src={ReactIcon} alt="react icon" />
+                                                    </div>
+                                                </Grid>
+                                                <Grid item md={3}>
+                                                    <div className="icon-container">
+                                                        <img src={reduxIcon} alt="redux icon" />
+                                                    </div>
+                                                </Grid>
+                                                <Grid item md={3}>
+                                                    <div className="icon-container">
+                                                        <img src={jsIcon} alt="JavaScript Icon" />
+                                                    </div>
+                                                </Grid>
+                                                <Grid item md={3}>
+                                                    <div className="icon-container">
+                                                        <img src={bootstrapIcon} alt="Sass Icon" />
+                                                    </div>
+                                                </Grid>
+                                                <Grid item md={3}>
+                                                    <div className="icon-container">
+                                                        <img src={sassIcon} alt="Sass Icon" />
+                                                    </div>
+                                                </Grid>
+                                                <Grid item md={3}>
+                                                    <div className="icon-container">
+                                                        <img src={nodeIcon} alt="Node Icon" />
+                                                    </div>
+                                                </Grid>
+                                                <Grid item md={3}>
+                                                    <div className="icon-container">
+                                                        <img src={postgresIcon} alt="PostgreSQL Icon" />
+                                                    </div>
+                                                </Grid>
+                                                <Grid item md={3}>
+                                                    <div className="icon-container">
+                                                        <img src={expressIcon} alt="PostgreSQL Icon" />
+                                                    </div>
+                                                </Grid>
+                                            </Grid>
+                                        </Slide>
+                                    </div>
+                                    <div className="project-links">
+                                        <Button variant='contained'>
+                                            Github
+                            </Button>
+                                        <Button variant='contained'>
+                                            Live Site
+                            </Button>
+                                    </div>
+                                </Grid>
+                                <Grid item xs={6}>
+                                    <div className="project-view">
+                                        <Slider  {...settings} >
+                                            <div className="slider-img">
+                                                <img src={truckingManagerHeader} alt="" />
+                                            </div>
+                                            <div className="slider-img">
+                                                <img src={truckingManagerHeader} alt="" />
+                                            </div>
+                                            <div className="slider-img">
+                                                <img src={truckingManagerHeader} alt="" />
+                                            </div>
+                                        </Slider>
+                                    </div>
+
+                                </Grid>
+
+                            </Grid>
+
+                        </div>
+
+                    </Grid>
+                </MediaQuery >
             </Grid>
         </section>
     )

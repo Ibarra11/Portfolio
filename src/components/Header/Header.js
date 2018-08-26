@@ -43,7 +43,7 @@ class Header extends Component {
                 <div className="hamburger-menu">
                     <i onClick={this.displayNav} className="fa fa-bars"></i>
                 </div>
-              <div className="nav-links" >
+              <div className="nav-links">
                 <a className="nav-link" href="#skills">Skills</a>
                 <a className="nav-link" href="#projects">Projects</a>
                 <a className="nav-link" href="#skills">Contact</a>

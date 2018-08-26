@@ -8,31 +8,33 @@
         margin: 0 auto;
     }
     .grid-item {
-        height: 475px;
-    }
-    .project {
+        min-height: 435px;
         margin-bottom: 2rem;
+        .project-content {
+            padding-right: 1rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
     }
     .project:last-child {
         margin-bottom: 0;
     }
-    .carousel-img {
-        height: 250px;
-        img {
-            height: 100%;
-        }
+    .slider-img {
+        height: 100%;
     }
     .project-info {
-        background-color: #E5E5E5;
+        background-color: #F9F9FA;
         padding: 1rem;
         height: 100%;
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
-        .project-description{
-            p{
+        .project-description {
+            p {
                 font-size: 1.25rem;
                 line-height: 1.5rem;
+                margin-bottom: 0.5rem;
+                text-align: justify;
             }
         }
     }
@@ -50,7 +52,6 @@
         }
         .slider-img {
             height: 100%;
-        
             img {
                 height: 100%;
                 width: 100%;
@@ -82,6 +83,7 @@
         }
     }
     .project-title {
+        margin-bottom: 1.5rem;
         h3 {
             font-size: 2.75rem;
             text-align: center;
@@ -96,11 +98,55 @@
     .project-links {
         width: 75%;
         margin: 0 auto;
-        margin-top: 0.5rem;
+        margin-top: 1.5rem;
         display: flex;
         justify-content: center;
         button {
             margin-right: 1.25rem;
+        }
+    }
+    .card {
+        margin-bottom: 20px;
+        width: 90%;
+        margin: 0 auto;
+        height: 650px;
+        margin-bottom: 1rem;
+        .card-text {
+            background-color: #f6f6f7;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 40%;
+            padding: 1rem;
+            .card-header {
+                text-align: center;
+                h3 {
+                    font-size: 2rem;
+                }
+                h5 {
+                    font-size: 1.25rem;
+                }
+            }
+            p {
+                text-align: center;
+                font-size: 1.25rem;
+            }
+        }
+        .card-image {
+            height: 60%;
+            img {
+                width: 100%;
+                height: 100%
+            } // background-image: url('../images/header.png');
+            // background-size: auto 100%;
+            // background-position: center;
+        }
+        .card-buttons {
+            display: flex;
+            justify-content: center;
+            button:last-child {
+                margin-left: 1rem;
+            }
         }
     }
     .project-tech {
@@ -117,26 +163,29 @@
             }
         }
     }
+    @media screen and (max-width: 1030px) {
+        .slider-img {
+            background-color: rgba(0, 0, 0, 0.7)
+        }
+    }
     @media screen and (max-width: 958px) {
         .project-info {
             .project-description {
                 border: 1px solid red;
-                width: 80%;
+                width: 100%;
                 margin: 0 auto;
             }
             .project-tech {
                 border: 1px solid red;
-                width: 80%;
-                margin: 0 auto;
-                text-align: center;
+                margin: 0 auto; // text-align: center;
                 .MuiGrid-container-65 {
                     border: 1px solid orange;
                     display: flex;
                     justify-content: space-between;
                 }
                 .MuiGrid-item-66 {
-                    //    border: 2px solid green;
-                    margin-top: 1rem; //    width: 25%;
+                    border: 2px solid green;
+                    margin-top: 1rem;
                 }
                 .icon-container {
                     height: 3.25rem;
@@ -144,28 +193,76 @@
                 }
             }
         }
-    }
-    @media screen and (max-width: 824px) {
-        .project-info {
-            
-            .project-tech {
-                border: 1px solid red;
-                .MuiGrid-item-66 {
-                    width: 25%;
+    } // @media screen and (max-width: 824px) {
+    //     .project-info {
+    //         .project-tech {
+    //             border: 1px solid red;
+    //             .MuiGrid-item-66 {
+    //                 width: 25%;
+    //             }
+    //             .icon-container {
+    //                 height: 3.5rem;
+    //             }
+    //         }
+    //     }
+    // }
+    @media screen and (max-width: 676px) {
+        .card-image {
+            height: 55% !important;
+        }
+        .card {
+            .card-text {
+                p {
+                    font-size: 1.1rem !important;
                 }
-                .icon-container {
-                    height: 3.5rem;
-                }
+            }
+            button {
+                padding: 6px !important;
             }
         }
     }
-    @media screen and (max-width: 610px) {
-        .project-info { 
-            .project-tech {
-                .icon-container {
-                    height: 2.75rem !important;
+    @media screen and (max-width: 500px) {
+        .card-image {
+            height: 50% !important;
+        }
+        .card-header {
+            h3 {
+                font-size: 1.75rem !important;
+            }
+            h5 {
+                font-size: 1.125rem !important;
+            }
+        }
+        .card {
+            height: 700px !important;
+        }
+    }
+    @media screen and (max-width: 434px) {
+        .card {
+            .card-text {
+                p {
+                    font-size: 1rem !important;
                 }
             }
+            button {
+                padding: 6px !important;
+            }
+        }
+        .card-header {
+            h3 {
+                font-size: 1.5rem !important;
+            }
+            h5 {
+                font-size: 1rem !important;
+            }
+        }
+        .card-image {
+            height: 40% !important;
+        }
+    }
+    @media screen and (max-width: 380px) {
+        .card-image {
+            height: 35% !important;
         }
     }
 }

@@ -24,7 +24,6 @@
         .icon-container{
             img{
                 height:  70% !important;
-                border: 1px solid yellow;
             }
             h5{
                 font-size: 1.4rem;
@@ -33,15 +32,11 @@
     }
 
     @media screen and (max-width: 412px) {
-        .skills-content{
-            border: 1px solid orange;
-           
-        }
         .icon-container{
-            border: 1px solid red;
+           
             img{
                 height:  60% !important;
-                border: 1px solid yellow;
+               
             }
             h5{
                 font-size: 1rem;
