@@ -1,8 +1,4 @@
 import React, { Component } from 'react';
-import AppBar from '@material-ui/core/AppBar';
-import Toolbar from '@material-ui/core/Toolbar';
-import Typography from '@material-ui/core/Typography';
-import Button from '@material-ui/core/Button';
 import { Grid } from '@material-ui/core';
 import Headshot from '../../images/headshot.JPG';
 import Waypoint from 'react-waypoint';
@@ -88,7 +84,8 @@ class Header extends Component {
                         <h3>Full Stack Web Developer</h3>
                     </div>
                     <div className="header-responsive-about">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt amet veniam dolores sequi, aspernatur reiciendis suscipit consequatur voluptatum soluta perferendis.</p>
+                        <p>Web development for me is not a hobby, but a passion.  Being able to take ideas and bring
+                                    them to life is one of the most rewarding feelings.  </p>
                     </div>
                     <div className="header-responsive-headshot">
                         <img src={Headshot} alt="heashto"/>

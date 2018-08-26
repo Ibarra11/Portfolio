@@ -61,9 +61,7 @@ class Contact extends Component {
                             <textarea value={this.state.message} onChange={this.onInputChange} name="message"></textarea>
                         </div>
                         <div className="form-submit">
-                            <Button type="submit" variant='contained'>
-                                Send Message
-                            </Button>
+                            <button className="btn" type="submit">Send Message</button>
                         </div>
                     </div>
                 </form>

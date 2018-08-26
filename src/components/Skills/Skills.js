@@ -13,7 +13,6 @@ import reduxIcon from '../../images/redux-icon.png';
 import gitIcon from '../../images/git-icon.png';
 import expressIcon from '../../images/express-icon.png';
 import ScrollableAnchor, { configureAnchors } from 'react-scrollable-anchor';
-import Slide from 'react-reveal/Slide';
 const Skills = () => {
     configureAnchors({ offset: -100, scrollDuration: 500 })
     return (

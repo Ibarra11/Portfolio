@@ -8,10 +8,11 @@ import sassIcon from '../../images/sass-icon.png';
 import reduxIcon from '../../images/redux-icon.png';
 import expressIcon from '../../images/express-icon.png';
 import bootstrapIcon from '../../images/bootstrap-icon.png';
-import truckingManagerHeader from '../../images/header.png';
-import Slide from 'react-reveal/Slide';
+import landingPage from '../../images/header.png';
+import payroll from '../../images/payroll.png';
+import trucks from '../../images/trucks.png';
+import home from '../../images/home.png';
 import MediaQuery from 'react-responsive';
-// import Carousel from 'nuka-carousel';
 import Slider from 'react-slick';
 import ScrollableAnchor, { configureAnchors } from 'react-scrollable-anchor';
 
@@ -39,13 +40,16 @@ const Projects = () => {
                             <div className="project-view">
                                 <Slider  {...settings} >
                                     <div className="slider-img">
-                                        <img src={truckingManagerHeader} alt="" />
+                                        <img src={landingPage} alt="landing page" />
                                     </div>
                                     <div className="slider-img">
-                                        <img src={truckingManagerHeader} alt="" />
+                                        <img src={home} alt="home page for dashboard" />
                                     </div>
                                     <div className="slider-img">
-                                        <img src={truckingManagerHeader} alt="" />
+                                        <img src={payroll} alt="paryoll" />
+                                    </div>
+                                    <div className="slider-img">
+                                        <img src={trucks} alt="trucks" />
                                     </div>
                                 </Slider>
                             </div>
@@ -139,25 +143,24 @@ const Projects = () => {
                                         </Grid>
                                     </div>
                                     <div className="project-links">
-                                        <Button variant='contained'>
-                                            Github
-                            </Button>
-                                        <Button variant='contained'>
-                                            Live Site
-                            </Button>
+                                        <a className="btn" target="_blank" href="https://github.com/Ibarra11/Trucking_Manager">Github</a>
+                                        <a className="btn" target="_blank" href="https://truckingmanager.live/#/">Live Site</a>
                                     </div>
                                 </Grid>
                                 <Grid item xs={6}>
                                     <div className="project-view">
                                         <Slider  {...settings} >
                                             <div className="slider-img">
-                                                <img src={truckingManagerHeader} alt="" />
+                                                <img src={landingPage} alt="landing page" />
                                             </div>
                                             <div className="slider-img">
-                                                <img src={truckingManagerHeader} alt="" />
+                                                <img src={home} alt="home page for dashboard" />
                                             </div>
                                             <div className="slider-img">
-                                                <img src={truckingManagerHeader} alt="" />
+                                                <img src={payroll} alt="paryroll" />
+                                            </div>
+                                            <div className="slider-img">
+                                                <img src={trucks} alt="trucks" />
                                             </div>
                                         </Slider>
                                     </div>

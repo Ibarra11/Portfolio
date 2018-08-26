@@ -23,11 +23,11 @@
                 color: $light;
                 font-size: 1.75rem;
                 padding-right: 15px;
-                transition: all .5s;
+                transition: all 1s;
             }
             a:hover,
             a:active {
-                color: $primary;
+                color: #000;
                 cursor: pointer;
             }
         }
