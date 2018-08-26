@@ -222,6 +222,13 @@
             }
         }
     }
+    @media only screen and (max-width: 546px) {
+        .mobile-links{
+            .nav-link{
+                font-size: 1.1rem !important;
+            }
+        }
+    }
     @media only screen and (max-width: 438px) {
         .nav-brand {
             height: 30px !important;
@@ -253,6 +260,12 @@
         }
     }
     @media only screen and (max-width: 381px) {
+        .mobile-links{
+            width: 80% !important;
+            .nav-link{
+                font-size: 0.9rem !important;
+            }
+        }
         .nav-brand{
             height: 27px !important;
         }

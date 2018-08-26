@@ -473,6 +473,9 @@ template {
       margin-bottom: 0.4rem; }
     .header .header-responsive-title h3 {
       font-size: 2rem !important; } }
+  @media only screen and (max-width: 546px) {
+    .header .mobile-links .nav-link {
+      font-size: 1.1rem !important; } }
   @media only screen and (max-width: 438px) {
     .header .nav-brand {
       height: 30px !important; }
@@ -492,6 +495,10 @@ template {
     .header .header-responsive-about p {
       font-size: 1.5rem !important; } }
   @media only screen and (max-width: 381px) {
+    .header .mobile-links {
+      width: 80% !important; }
+      .header .mobile-links .nav-link {
+        font-size: 0.9rem !important; }
     .header .nav-brand {
       height: 27px !important; }
     .header i {
