@@ -74,11 +74,12 @@
             align-items: center;
         }
         .header-image {
-            height: 57%;
+            height: 55%;
             display: flex;
             justify-content: center;
             img {
                 height: 100%;
+                width: auto;
                 border-radius: 50%;
             }
         }
@@ -86,7 +87,7 @@
             margin-top: 1.75rem;
             text-align: center;
             p {
-                font-size: 1.35rem;
+                font-size: 1.6rem;
                 color: $light;
                 letter-spacing: 2px;
             }

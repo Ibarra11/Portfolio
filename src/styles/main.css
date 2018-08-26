@@ -369,17 +369,18 @@ template {
       justify-content: center;
       align-items: center; }
     .header .grid .header-image {
-      height: 57%;
+      height: 55%;
       display: flex;
       justify-content: center; }
       .header .grid .header-image img {
         height: 100%;
+        width: auto;
         border-radius: 50%; }
     .header .grid .header-about {
       margin-top: 1.75rem;
       text-align: center; }
       .header .grid .header-about p {
-        font-size: 1.35rem;
+        font-size: 1.6rem;
         color: #F6F6F7;
         letter-spacing: 2px; }
   .header .about-info {

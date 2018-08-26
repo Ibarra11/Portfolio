@@ -94,50 +94,49 @@ const Projects = () => {
                                     </div>
                                     <div className="project-tech">
                                         <h5>Technoligies Used</h5>
-                                        <Slide left cascade>
-                                            <Grid container>
-                                                <Grid item md={3}>
-                                                    <div className="icon-container">
-                                                        <img src={ReactIcon} alt="react icon" />
-                                                    </div>
-                                                </Grid>
-                                                <Grid item md={3}>
-                                                    <div className="icon-container">
-                                                        <img src={reduxIcon} alt="redux icon" />
-                                                    </div>
-                                                </Grid>
-                                                <Grid item md={3}>
-                                                    <div className="icon-container">
-                                                        <img src={jsIcon} alt="JavaScript Icon" />
-                                                    </div>
-                                                </Grid>
-                                                <Grid item md={3}>
-                                                    <div className="icon-container">
-                                                        <img src={bootstrapIcon} alt="Sass Icon" />
-                                                    </div>
-                                                </Grid>
-                                                <Grid item md={3}>
-                                                    <div className="icon-container">
-                                                        <img src={sassIcon} alt="Sass Icon" />
-                                                    </div>
-                                                </Grid>
-                                                <Grid item md={3}>
-                                                    <div className="icon-container">
-                                                        <img src={nodeIcon} alt="Node Icon" />
-                                                    </div>
-                                                </Grid>
-                                                <Grid item md={3}>
-                                                    <div className="icon-container">
-                                                        <img src={postgresIcon} alt="PostgreSQL Icon" />
-                                                    </div>
-                                                </Grid>
-                                                <Grid item md={3}>
-                                                    <div className="icon-container">
-                                                        <img src={expressIcon} alt="PostgreSQL Icon" />
-                                                    </div>
-                                                </Grid>
+
+                                        <Grid container>
+                                            <Grid item md={3}>
+                                                <div className="icon-container">
+                                                    <img src={ReactIcon} alt="react icon" />
+                                                </div>
                                             </Grid>
-                                        </Slide>
+                                            <Grid item md={3}>
+                                                <div className="icon-container">
+                                                    <img src={reduxIcon} alt="redux icon" />
+                                                </div>
+                                            </Grid>
+                                            <Grid item md={3}>
+                                                <div className="icon-container">
+                                                    <img src={jsIcon} alt="JavaScript Icon" />
+                                                </div>
+                                            </Grid>
+                                            <Grid item md={3}>
+                                                <div className="icon-container">
+                                                    <img src={bootstrapIcon} alt="Sass Icon" />
+                                                </div>
+                                            </Grid>
+                                            <Grid item md={3}>
+                                                <div className="icon-container">
+                                                    <img src={sassIcon} alt="Sass Icon" />
+                                                </div>
+                                            </Grid>
+                                            <Grid item md={3}>
+                                                <div className="icon-container">
+                                                    <img src={nodeIcon} alt="Node Icon" />
+                                                </div>
+                                            </Grid>
+                                            <Grid item md={3}>
+                                                <div className="icon-container">
+                                                    <img src={postgresIcon} alt="PostgreSQL Icon" />
+                                                </div>
+                                            </Grid>
+                                            <Grid item md={3}>
+                                                <div className="icon-container">
+                                                    <img src={expressIcon} alt="PostgreSQL Icon" />
+                                                </div>
+                                            </Grid>
+                                        </Grid>
                                     </div>
                                     <div className="project-links">
                                         <Button variant='contained'>

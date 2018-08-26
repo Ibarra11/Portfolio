@@ -23,7 +23,7 @@ const Skills = () => {
                     <h2>Skills</h2>
                 </div>
             </ScrollableAnchor>
-            <Slide left cascade>
+           
                 <div className="skills-content">
                     <Grid className="grid-container" container spacing={16} >
                         <Grid className="grid-item" item xs={4} sm={3} md={2}>
@@ -100,7 +100,6 @@ const Skills = () => {
                         </Grid>
                     </Grid>
             </div>
-            </Slide>
         </section>
     )
 }

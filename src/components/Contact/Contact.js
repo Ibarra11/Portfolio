@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import { TextField, Grid, Button } from '@material-ui/core';
+import { Button } from '@material-ui/core';
 import axios from 'axios';
 import swal from 'sweetalert2';
-import toastr from 'toastr';
+import ScrollableAnchor, { configureAnchors } from 'react-scrollable-anchor';
 
 class Contact extends Component {
     state = {
@@ -10,6 +10,10 @@ class Contact extends Component {
         email: '',
         message: ''
     };
+
+    componentDidMount() {
+        configureAnchors({ offset: -100, scrollDuration: 500 })
+    }
 
     onInputChange = event => {
         this.setState({ [event.target.name]: event.target.value })
@@ -20,7 +24,7 @@ class Contact extends Component {
         let { name, email, message } = this.state;
         axios.post('/api/send', { name, email, message })
             .then(() => {
-                this.setState({name: '', email: '', message: ''})
+                this.setState({ name: '', email: '', message: '' })
                 swal({
                     position: 'center',
                     type: 'success',
@@ -28,7 +32,7 @@ class Contact extends Component {
                     showConfirmButton: false,
                     timer: 2000
                 })
-                
+
             })
             .catch(err => console.log(err))
     }
@@ -37,9 +41,11 @@ class Contact extends Component {
 
         return (
             <section className="section contact">
-                <div className="section-header">
-                    <h2>Contact</h2>
-                </div>
+                <ScrollableAnchor id={'contact'}>
+                    <div className="section-header">
+                        <h2>Contact</h2>
+                    </div>
+                </ScrollableAnchor>
                 <form onSubmit={this.sendEmail} className="form">
                     <div className="form-inputs">
                         <div className="form-group">

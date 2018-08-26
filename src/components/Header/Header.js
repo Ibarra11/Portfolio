@@ -46,12 +46,12 @@ class Header extends Component {
               <div className="nav-links">
                 <a className="nav-link" href="#skills">Skills</a>
                 <a className="nav-link" href="#projects">Projects</a>
-                <a className="nav-link" href="#skills">Contact</a>
+                <a className="nav-link" href="#contact">Contact</a>
               </div>
               <div className={this.state.displayNav ? "mobile-links": "none" } >
                 <a className="nav-link" href="#skills">Skills</a>
                 <a className="nav-link" href="#projects">Projects</a>
-                <a className="nav-link" href="#skills">Contact</a>
+                <a className="nav-link" href="#contact">Contact</a>
               </div>
             </nav>
 
@@ -71,7 +71,10 @@ class Header extends Component {
                                 <img src={Headshot} alt="headshot" />
                             </div>
                             <div className="header-about">
-                                <p className="about-text-">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda obcaecati laborum numquam accusantium, dignissimos cumque voluptate tenetur odio commodi id tempora temporibus asperiores vitae doloremque repudiandae eos fugiat accusamus cum?</p>
+                                <p className="about-text">
+                                    Web development for me is not a hobby, but a passion.  Being able to take ideas and bring
+                                    them to life is one of the most rewarding feelings.  
+                                </p>
                             </div>
                         </Grid>
                     </Grid>
