@@ -400,7 +400,6 @@ template {
   .header .left-nav {
     display: flex; }
   .header .header-responsive {
-    border: 1px solid green;
     background-color: rgba(7, 88, 149, 0.9);
     height: 100vh;
     color: #F6F6F7; }
