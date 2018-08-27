@@ -29,15 +29,16 @@
         height: 100%;
         display: flex;
         flex-direction: column;
+        border-radius: 5px;
+        box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
         .project-description {
             p {
-                font-size: 1.25rem;
+                font-size: 1.5rem;
                 line-height: 1.5rem;
                 margin-bottom: 0.5rem;
                 text-align: justify;
             }
         }
-        
     }
     li.slider-slide {
         height: 100%;
@@ -67,7 +68,8 @@
     .slick-prev {
         left: 20px;
     }
-    .slick-prev:before, .slick-next:before{
+    .slick-prev:before,
+    .slick-next:before {
         color: #256D50;
     }
     .slick-dots {
@@ -93,7 +95,8 @@
         margin-top: 1.5rem;
         display: flex;
         justify-content: center;
-        .btn:link, .btn:visited {
+        .btn:link,
+        .btn:visited {
             margin-right: 1.25rem;
             padding: 0.75rem 1.25rem;
             text-decoration: none;
@@ -103,7 +106,8 @@
             color: $light;
             transition: all 1s;
         }
-        .btn:hover, .btn:active{
+        .btn:hover,
+        .btn:active {
             background-color: rgba(21, 112, 122, 1);
             cursor: pointer;
         }
@@ -113,7 +117,8 @@
         width: 90%;
         margin: 0 auto;
         height: 650px;
-        margin-bottom: 1rem;
+        margin-bottom: 2rem;
+        box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
         .card-text {
             background-color: #f6f6f7;
             display: flex;
@@ -147,8 +152,21 @@
         .card-buttons {
             display: flex;
             justify-content: center;
-            button:last-child {
-                margin-left: 1rem;
+            .btn:link,
+            .btn:visited {
+                margin-right: 1.25rem;
+                padding: 0.75rem 1.25rem;
+                text-decoration: none;
+                background-color: #177E89;
+                border-radius: 5px;
+                font-weight: bold;
+                color: $light;
+                transition: all 1s;
+            }
+            .btn:hover,
+            .btn:active {
+                background-color: rgba(21, 112, 122, 1);
+                cursor: pointer;
             }
         }
     }
@@ -196,22 +214,10 @@
                 }
             }
         }
-    } // @media screen and (max-width: 824px) {
-    //     .project-info {
-    //         .project-tech {
-    //             border: 1px solid red;
-    //             .MuiGrid-item-66 {
-    //                 width: 25%;
-    //             }
-    //             .icon-container {
-    //                 height: 3.5rem;
-    //             }
-    //         }
-    //     }
-    // }
+    }
     @media screen and (max-width: 676px) {
         .card-image {
-            height: 55% !important;
+            height: 40% !important;
         }
         .card {
             .card-text {
@@ -226,7 +232,7 @@
     }
     @media screen and (max-width: 500px) {
         .card-image {
-            height: 50% !important;
+            height: 35% !important;
         }
         .card-header {
             h3 {

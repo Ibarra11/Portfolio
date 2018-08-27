@@ -17,6 +17,8 @@
         width: 100%;
         padding: 16px 20px;
         z-index: 20;
+        box-shadow: 0 8px 6px -6px rgba(0,0,0,.15);
+      
         .hamburger-menu {
             display: none;
         }
@@ -36,10 +38,12 @@
                 padding-left: 30px;
                 color: $light;
                 font-size: 1.35rem;
+                transition: all 1s;
             }
             .nav-link:hover,
             .nav-link:active {
                 cursor: pointer;
+                color: #000;
             }
         }
     }

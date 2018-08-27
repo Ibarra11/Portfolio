@@ -8,9 +8,12 @@ import sassIcon from '../../images/sass-icon.png';
 import reduxIcon from '../../images/redux-icon.png';
 import expressIcon from '../../images/express-icon.png';
 import bootstrapIcon from '../../images/bootstrap-icon.png';
+import trucks from '../../images/trucks.png';
 import landingPage from '../../images/header.png';
 import payroll from '../../images/payroll.png';
-import trucks from '../../images/trucks.png';
+import login from '../../images/clonepenLogin.png';
+import dragDrop from '../../images/dragndrop.png';
+import pens from '../../images/pens.png';
 import home from '../../images/home.png';
 import MediaQuery from 'react-responsive';
 import Slider from 'react-slick';
@@ -23,7 +26,9 @@ const Projects = () => {
         speed: 500,
         slidesToShow: 1,
         slidesToScroll: 1
+
     };
+
     configureAnchors({ offset: -100, scrollDuration: 500 })
     return (
         <section className="section projects">
@@ -36,7 +41,6 @@ const Projects = () => {
                 <MediaQuery query="(max-device-width: 972px)">
                     <div className="card">
                         <div className="card-image ">
-                            {/* <img src={truckingManagerHeader} alt="" /> */}
                             <div className="project-view">
                                 <Slider  {...settings} >
                                     <div className="slider-img">
@@ -57,7 +61,7 @@ const Projects = () => {
                         <div className="card-text">
                             <div className="card-header">
                                 <h3>Trucking Manager</h3>
-                                <h5>Personally Developed</h5>
+                                <h5>Personal Project</h5>
                             </div>
                             <div className="card-body">
                                 <p>
@@ -68,12 +72,41 @@ const Projects = () => {
                                     </p>
                             </div>
                             <div className="card-buttons">
-                                <Button variant='contained'>
-                                    Github
-                            </Button>
-                                <Button variant='contained'>
-                                    Live Site
-                            </Button>
+                                <a className="btn" target="_blank" href="https://github.com/Ibarra11/Trucking_Manager">Github</a>
+                                <a className="btn" target="_blank" href="https://truckingmanager.live/#/">Live Site</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="card">
+                        <div className="card-image ">
+                            <div className="project-view">
+                                <Slider  {...settings} >
+                                    <div className="slider-img">
+                                        <img src={login} alt="login page" />
+                                    </div>
+                                    <div className="slider-img">
+                                        <img src={home} alt="drag and drop" />
+                                    </div>
+                                    <div className="slider-img">
+                                        <img src={pens} alt="clone pen" />
+                                    </div>
+                                </Slider>
+                            </div>
+                        </div>
+                        <div className="card-text">
+                            <div className="card-header">
+                                <h3>Clonepen </h3>
+                                <h5>Group Project</h5>
+                            </div>
+                            <div className="card-body">
+                                <p>
+                                    Clonepen is the clone of the front end developement playground clonepen.  This project was develeoped
+                                    in collaboration with three other developers.
+                                    </p>
+                            </div>
+                            <div className="card-buttons">
+                                <a className="btn" target="_blank" href="https://github.com/Ibarra11/Trucking_Manager">Github</a>
+                                <a className="btn" target="_blank" href="https://clonepen.com/#/">Live Site</a>
                             </div>
                         </div>
                     </div>
@@ -84,7 +117,7 @@ const Projects = () => {
                         <div className="project-info">
                             <div className="project-title">
                                 <h3>Trucking Manager</h3>
-                                <h5>Personally Developed</h5>
+                                <h5>Personally Project</h5>
                             </div>
                             <Grid container>
                                 <Grid className="project-content" item xs={6}>
@@ -170,7 +203,82 @@ const Projects = () => {
                             </Grid>
 
                         </div>
+                    </Grid>
+                    <Grid className="grid-item" item xs={12}>
+                        <div className="project-info">
+                            <div className="project-title">
+                                <h3>Clonepen</h3>
+                                <h5>Group Project</h5>
+                            </div>
+                            <Grid container>
+                                <Grid className="project-content" item xs={6}>
+                                    <div className="project-description">
+                                        <p>
+                                            Clonepen is a clone of the front end development playground Codepen.  This project
+                                            was developed with a group of three other developers.  I contributed both on the front and
+                                            back end of the application.
+                            </p>
+                                    </div>
+                                    <div className="project-tech">
+                                        <h5>Technoligies Used</h5>
 
+                                        <Grid container>
+                                            <Grid item md={3}>
+                                                <div className="icon-container">
+                                                    <img src={ReactIcon} alt="react icon" />
+                                                </div>
+                                            </Grid>
+                                            <Grid item md={3}>
+                                                <div className="icon-container">
+                                                    <img src={jsIcon} alt="JavaScript Icon" />
+                                                </div>
+                                            </Grid>
+                                            <Grid item md={3}>
+                                                <div className="icon-container">
+                                                    <img src={sassIcon} alt="Sass Icon" />
+                                                </div>
+                                            </Grid>
+                                            <Grid item md={3}>
+                                            </Grid>
+                                            <Grid item md={3}>
+                                                <div className="icon-container">
+                                                    <img src={nodeIcon} alt="Node Icon" />
+                                                </div>
+                                            </Grid>
+                                            <Grid item md={3}>
+                                                <div className="icon-container">
+                                                    <img src={postgresIcon} alt="PostgreSQL Icon" />
+                                                </div>
+                                            </Grid>
+                                            <Grid item md={3}>
+                                                <div className="icon-container">
+                                                    <img src={expressIcon} alt="PostgreSQL Icon" />
+                                                </div>
+                                            </Grid>
+                                        </Grid>
+                                    </div>
+                                    <div className="project-links">
+                                        <a className="btn" target="_blank" href="https://github.com/Ibarra11/Trucking_Manager">Github</a>
+                                        <a className="btn" target="_blank" href="https://clonepen.com/#/">Live Site</a>
+                                    </div>
+                                </Grid>
+                                <Grid item xs={6}>
+                                    <div className="project-view">
+                                        <Slider  {...settings} >
+                                            <div className="slider-img">
+                                                <img src={login} alt="login page" />
+                                            </div>
+                                            <div className="slider-img">
+                                                <img src={dragDrop} alt="drag and drop" />
+                                            </div>
+                                            <div className="slider-img">
+                                                <img src={pens} alt="codepen pens" />
+                                            </div>
+                                        </Slider>
+                                    </div>
+                                </Grid>
+                            </Grid>
+                        </div>
                     </Grid>
                 </MediaQuery >
             </Grid>

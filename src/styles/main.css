@@ -317,7 +317,8 @@ template {
     justify-content: space-between;
     width: 100%;
     padding: 16px 20px;
-    z-index: 20; }
+    z-index: 20;
+    box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.15); }
     .header .nav .none {
       opacity: 0;
       height: 0;
@@ -338,12 +339,14 @@ template {
       text-transform: uppercase;
       padding-left: 30px;
       color: #F6F6F7;
-      font-size: 1.35rem; }
+      font-size: 1.35rem;
+      transition: all 1s; }
     .header .nav .nav-links .nav-link:hover,
     .header .nav .nav-links .nav-link:active,
     .header .nav .mobile-links .nav-link:hover,
     .header .nav .mobile-links .nav-link:active {
-      cursor: pointer; }
+      cursor: pointer;
+      color: #000; }
   .header .nav-hidden {
     opacity: 0;
     position: absolute;
@@ -566,9 +569,11 @@ template {
     padding: 1rem;
     height: 100%;
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    border-radius: 5px;
+    box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important; }
     .projects .project-info .project-description p {
-      font-size: 1.25rem;
+      font-size: 1.5rem;
       line-height: 1.5rem;
       margin-bottom: 0.5rem;
       text-align: justify; }
@@ -591,7 +596,8 @@ template {
     right: 15px; }
   .projects .slick-prev {
     left: 20px; }
-  .projects .slick-prev:before, .projects .slick-next:before {
+  .projects .slick-prev:before,
+  .projects .slick-next:before {
     color: #256D50; }
   .projects .slick-dots {
     position: absolute;
@@ -612,7 +618,8 @@ template {
     margin-top: 1.5rem;
     display: flex;
     justify-content: center; }
-    .projects .project-links .btn:link, .projects .project-links .btn:visited {
+    .projects .project-links .btn:link,
+    .projects .project-links .btn:visited {
       margin-right: 1.25rem;
       padding: 0.75rem 1.25rem;
       text-decoration: none;
@@ -621,7 +628,8 @@ template {
       font-weight: bold;
       color: #F6F6F7;
       transition: all 1s; }
-    .projects .project-links .btn:hover, .projects .project-links .btn:active {
+    .projects .project-links .btn:hover,
+    .projects .project-links .btn:active {
       background-color: #15707a;
       cursor: pointer; }
   .projects .card {
@@ -629,7 +637,8 @@ template {
     width: 90%;
     margin: 0 auto;
     height: 650px;
-    margin-bottom: 1rem; }
+    margin-bottom: 2rem;
+    box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important; }
     .projects .card .card-text {
       background-color: #f6f6f7;
       display: flex;
@@ -654,8 +663,20 @@ template {
     .projects .card .card-buttons {
       display: flex;
       justify-content: center; }
-      .projects .card .card-buttons button:last-child {
-        margin-left: 1rem; }
+      .projects .card .card-buttons .btn:link,
+      .projects .card .card-buttons .btn:visited {
+        margin-right: 1.25rem;
+        padding: 0.75rem 1.25rem;
+        text-decoration: none;
+        background-color: #177E89;
+        border-radius: 5px;
+        font-weight: bold;
+        color: #F6F6F7;
+        transition: all 1s; }
+      .projects .card .card-buttons .btn:hover,
+      .projects .card .card-buttons .btn:active {
+        background-color: #15707a;
+        cursor: pointer; }
   .projects .project-tech h5 {
     font-size: 1.5rem; }
   .projects .project-tech .icon-container {
@@ -688,14 +709,14 @@ template {
         margin-top: 0 !important; } }
   @media screen and (max-width: 676px) {
     .projects .card-image {
-      height: 55% !important; }
+      height: 40% !important; }
     .projects .card .card-text p {
       font-size: 1.1rem !important; }
     .projects .card button {
       padding: 6px !important; } }
   @media screen and (max-width: 500px) {
     .projects .card-image {
-      height: 50% !important; }
+      height: 35% !important; }
     .projects .card-header h3 {
       font-size: 1.75rem !important; }
     .projects .card-header h5 {
@@ -718,7 +739,7 @@ template {
       height: 35% !important; } }
 
 .contact {
-  background-color: #404F59; }
+  background-color: #303841; }
   .contact h2 {
     color: #F6F6F7; }
   .contact .form {
@@ -789,7 +810,7 @@ template {
       margin: 0 auto; } }
 
 .footer {
-  background-color: #075895;
+  background-color: #171A21;
   display: flex;
   align-items: center;
   color: #F6F6F7;
@@ -814,7 +835,7 @@ template {
       transition: all 1s; }
     .footer .media-icons .icon-group a:hover,
     .footer .media-icons .icon-group a:active {
-      color: #000;
+      color: #177E89;
       cursor: pointer; }
   @media only screen and (max-width: 430px) {
     .footer {
