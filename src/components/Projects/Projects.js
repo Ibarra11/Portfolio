@@ -66,11 +66,11 @@ const Projects = () => {
                             </div>
                             <div className="card-body">
                                 <p>
-                                Trucking Manager is a web application built to assist trucking companies in efficiently
-                                            running their business.  Some features of this application include charts to display
-                                            metrics such as expenses, income, payroll, and revenue. A dispatch system that allows users
-                                            to send jobs information to the drivers.  Secure user authentication and registration
-                                            using bcrypt.
+                                    Trucking Manager is a web application built to assist trucking companies in efficiently
+                                                running their business.  Some features of this application include charts to display
+                                                metrics such as expenses, income, payroll, and revenue. A dispatch system that allows users
+                                                to send jobs information to the drivers.  Secure user authentication and registration
+                                                using bcrypt.
                                     </p>
                             </div>
                             <div className="card-buttons">
