@@ -11,10 +11,11 @@ import bootstrapIcon from '../../images/bootstrap-icon.png';
 import trucks from '../../images/trucks.png';
 import landingPage from '../../images/header.png';
 import payroll from '../../images/payroll.png';
-import login from '../../images/clonepenLogin.png';
-import dragDrop from '../../images/dragndrop.png';
+import login from '../../images/login.png';
+import dragDrop from '../../images/dragndrop2.png';
 import pens from '../../images/pens.png';
 import home from '../../images/home.png';
+import profile from '../../images/profile.png';
 import MediaQuery from 'react-responsive';
 import Slider from 'react-slick';
 import ScrollableAnchor, { configureAnchors } from 'react-scrollable-anchor';
@@ -65,10 +66,11 @@ const Projects = () => {
                             </div>
                             <div className="card-body">
                                 <p>
-                                    Trucking Manager is a web application built to assist trucking companies in efficiently
-                                    running their business.  Some features of this application include charts to display
-                                    metrics such as expenses, income, payroll, and revenue.  Additionaly, Trucking Manager offers
-                                    a dispatch system that sends job information to the drivers.
+                                Trucking Manager is a web application built to assist trucking companies in efficiently
+                                            running their business.  Some features of this application include charts to display
+                                            metrics such as expenses, income, payroll, and revenue. A dispatch system that allows users
+                                            to send jobs information to the drivers.  Secure user authentication and registration
+                                            using bcrypt.
                                     </p>
                             </div>
                             <div className="card-buttons">
@@ -85,10 +87,13 @@ const Projects = () => {
                                         <img src={login} alt="login page" />
                                     </div>
                                     <div className="slider-img">
-                                        <img src={home} alt="drag and drop" />
+                                        <img src={dragDrop} alt="drag and drop" />
                                     </div>
                                     <div className="slider-img">
                                         <img src={pens} alt="clone pen" />
+                                    </div>
+                                    <div className="slider-img">
+                                        <img src={profile} alt="clonepen profile" />
                                     </div>
                                 </Slider>
                             </div>
@@ -100,8 +105,10 @@ const Projects = () => {
                             </div>
                             <div className="card-body">
                                 <p>
-                                    Clonepen is the clone of the front end developement playground clonepen.  This project was develeoped
-                                    in collaboration with three other developers.
+                                    Clonepen is a clone of the popular front end development site codepen.io.  This project
+                                                was developed with a group of three other developers.  Some of the main featues of this application include
+                                                secure authentication and registration using bcrypt.  A text editor where users are able to view, save, and
+                                                edit pens.  A drag and drop feature where users can customize their showcase of pens.
                                     </p>
                             </div>
                             <div className="card-buttons">
@@ -122,11 +129,13 @@ const Projects = () => {
                             <Grid container>
                                 <Grid className="project-content" item xs={6}>
                                     <div className="project-description">
+                                        <h5>Project Summary</h5>
                                         <p>
                                             Trucking Manager is a web application built to assist trucking companies in efficiently
                                             running their business.  Some features of this application include charts to display
-                                            metrics such as expenses, income, payroll, and revenue.  Additionaly, Trucking Manager offers
-                                            a dispatch system that sends job information to the drivers.
+                                            metrics such as expenses, income, payroll, and revenue. A dispatch system that allows users
+                                            to send jobs information to the drivers.  Secure user authentication and registration
+                                            using bcrypt.
                             </p>
                                     </div>
                                     <div className="project-tech">
@@ -213,10 +222,12 @@ const Projects = () => {
                             <Grid container>
                                 <Grid className="project-content" item xs={6}>
                                     <div className="project-description">
+                                        <h5>Project Summary</h5>
                                         <p>
-                                            Clonepen is a clone of the front end development playground Codepen.  This project
-                                            was developed with a group of three other developers.  I contributed both on the front and
-                                            back end of the application.
+                                            Clonepen is a clone of the popular front end development site codepen.io.  This project
+                                            was developed with a group of three other developers.  Some of the main featues of this application include
+                                            secure authentication and registration using bcrypt.  A text editor where users are able to view, save, and
+                                            edit pens.  A drag and drop feature where users can customize their showcase of pens.
                             </p>
                                     </div>
                                     <div className="project-tech">
@@ -273,6 +284,9 @@ const Projects = () => {
                                             </div>
                                             <div className="slider-img">
                                                 <img src={pens} alt="codepen pens" />
+                                            </div>
+                                            <div className="slider-img">
+                                                <img src={profile} alt="codepen profile" />
                                             </div>
                                         </Slider>
                                     </div>

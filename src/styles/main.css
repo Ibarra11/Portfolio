@@ -553,7 +553,7 @@ template {
     width: 95%;
     margin: 0 auto; }
   .projects .grid-item {
-    min-height: 435px;
+    min-height: 600px;
     margin-bottom: 2rem; }
     .projects .grid-item .project-content {
       padding-right: 1rem;
@@ -562,8 +562,6 @@ template {
       justify-content: space-between; }
   .projects .project:last-child {
     margin-bottom: 0; }
-  .projects .slider-img {
-    height: 100%; }
   .projects .project-info {
     background-color: #F4F4F9;
     padding: 1rem;
@@ -596,9 +594,14 @@ template {
     right: 15px; }
   .projects .slick-prev {
     left: 20px; }
+  .projects .slick-arrow {
+    background-color: black !important;
+    border-radius: 50%; }
   .projects .slick-prev:before,
   .projects .slick-next:before {
-    color: #256D50; }
+    color: white; }
+  .projects .slider-img {
+    height: 100%; }
   .projects .slick-dots {
     position: absolute;
     bottom: 10px; }
@@ -634,22 +637,22 @@ template {
       cursor: pointer; }
   .projects .card {
     margin-bottom: 20px;
-    width: 90%;
+    width: 70%;
     margin: 0 auto;
     height: 650px;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
     box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important; }
     .projects .card .card-text {
       background-color: #f6f6f7;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      height: 40%;
+      height: 45%;
       padding: 1rem; }
       .projects .card .card-text .card-header {
         text-align: center; }
         .projects .card .card-text .card-header h3 {
-          font-size: 2rem; }
+          font-size: 2.25rem; }
         .projects .card .card-text .card-header h5 {
           font-size: 1.25rem; }
       .projects .card .card-text p {
@@ -662,10 +665,11 @@ template {
         height: 100%; }
     .projects .card .card-buttons {
       display: flex;
-      justify-content: center; }
+      width: 40%;
+      margin: 0 auto;
+      justify-content: space-between; }
       .projects .card .card-buttons .btn:link,
       .projects .card .card-buttons .btn:visited {
-        margin-right: 1.25rem;
         padding: 0.75rem 1.25rem;
         text-decoration: none;
         background-color: #177E89;
@@ -677,8 +681,19 @@ template {
       .projects .card .card-buttons .btn:active {
         background-color: #15707a;
         cursor: pointer; }
+  .projects .features h5,
+  .projects .project-description h5 {
+    font-size: 1.75rem; }
+  .projects .project-description p {
+    margin-top: 0.5rem;
+    line-height: 1.75rem !important; }
+  .projects .features .feature-list {
+    padding-left: 15px;
+    list-style: none; }
+    .projects .features .feature-list li {
+      font-size: 1.25rem; }
   .projects .project-tech h5 {
-    font-size: 1.5rem; }
+    font-size: 1.75rem; }
   .projects .project-tech .icon-container {
     height: 3rem;
     margin: 0 auto;
@@ -707,36 +722,71 @@ template {
       .projects .project-info .project-tech .icon-container {
         height: 3.25rem;
         margin-top: 0 !important; } }
+  @media only screen and (max-width: 874px) {
+    .projects .card {
+      height: 700px !important; }
+      .projects .card .card-buttons {
+        width: 50% !important; } }
   @media screen and (max-width: 676px) {
     .projects .card-image {
       height: 40% !important; }
-    .projects .card .card-text p {
-      font-size: 1.1rem !important; }
-    .projects .card button {
-      padding: 6px !important; } }
-  @media screen and (max-width: 500px) {
+    .projects .card {
+      height: 575px !important; }
+      .projects .card .card-text {
+        height: 60% !important; }
+        .projects .card .card-text p {
+          font-size: 1.1rem !important; }
+      .projects .card .card-buttons {
+        width: 70% !important; } }
+  @media screen and (max-width: 550px) {
     .projects .card-image {
       height: 35% !important; }
     .projects .card-header h3 {
-      font-size: 1.75rem !important; }
+      font-size: 1.5rem !important; }
     .projects .card-header h5 {
-      font-size: 1.125rem !important; }
+      font-size: 1.1rem !important; }
     .projects .card {
-      height: 700px !important; } }
+      height: 500px !important; }
+      .projects .card .card-text {
+        height: 65% !important; }
+        .projects .card .card-text p {
+          font-size: 1.05rem !important; }
+    .projects .card-buttons .btn {
+      padding: 10px 6px !important; }
+    .projects .card .card-buttons {
+      width: 55% !important; } }
   @media screen and (max-width: 434px) {
-    .projects .card .card-text p {
-      font-size: 1rem !important; }
-    .projects .card button {
-      padding: 6px !important; }
+    .projects .card {
+      height: 300px !important; }
+      .projects .card .card-buttons {
+        width: 65% !important; }
+      .projects .card .card-image {
+        height: 60% !important; }
+      .projects .card .card-text {
+        height: 40% !important; }
+        .projects .card .card-text p {
+          font-size: 0.95rem !important;
+          display: none; }
+      .projects .card .btn {
+        padding: 8px 6px !important; }
     .projects .card-header h3 {
       font-size: 1.5rem !important; }
     .projects .card-header h5 {
       font-size: 1rem !important; }
     .projects .card-image {
       height: 40% !important; } }
-  @media screen and (max-width: 380px) {
-    .projects .card-image {
-      height: 35% !important; } }
+  @media screen and (max-width: 390px) {
+    .projects .card .card-header h3 {
+      font-size: 1.25rem !important; }
+    .projects .card .card-header h5 {
+      font-size: 0.9rem !important; }
+    .projects .card .card-buttons {
+      width: 80% !important;
+      margin: 0 auto;
+      justify-content: space-between !important; }
+    .projects .card .btn {
+      padding: 8px !important;
+      margin: 0 !important; } }
 
 .contact {
   background-color: #303841; }
