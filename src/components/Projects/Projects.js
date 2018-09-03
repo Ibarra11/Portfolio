@@ -106,7 +106,7 @@ const Projects = () => {
                             <div className="card-body">
                                 <p>
                                     Clonepen is a clone of the popular front end development site codepen.io.  This project
-                                                was developed with a group of three other developers.  Some of the main featues of this application include
+                                                was developed with a group of three other developers.  Some of the main features of this application include
                                                 secure authentication and registration using bcrypt.  A text editor where users are able to view, save, and
                                                 edit pens.  A drag and drop feature where users can customize their showcase of pens.
                                     </p>
