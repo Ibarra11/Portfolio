@@ -71,10 +71,9 @@
   }
   .grid-item {
     margin-bottom: 2rem;
-    height: 50vh;
+    height: 60vh;
     .project-info {
       height: 100%;
-      background-color: #f4f4f9;
       display: flex;
       flex-direction: column;
       border-radius: 5px;
@@ -107,6 +106,8 @@
         }
         .project-description {
           height: 45%;
+          display: flex;
+          align-items: center;
           p {
             margin-top: 0.5rem;
             line-height: 1.75rem !important;
@@ -139,7 +140,7 @@
       .project-links {
         width: 75%;
         margin: 0 auto;
-        height: 15%;
+        height: 10%;
         display: flex;
         justify-content: space-between;
         align-items: flex-end;
@@ -154,7 +155,7 @@
         }
       }
       .project-tech {
-        height: 40%;
+        height: 45%;
         display: flex;
         justify-content: center;
         h5 {
@@ -235,17 +236,17 @@
       }
     }
   }
-  @media screen and(max-width: 1220px) {
+  @media screen and(max-width: 1240px) {
     .project-content {
       h3 {
-        font-size: 2.15rem !important;
+        font-size: 2rem !important;
       }
       h5 {
         font-size: 0.85rem !important;
       }
       .project-description {
         p {
-          font-size: 1rem !important;
+          font-size: 0.9rem !important;
         }
       }
     }
@@ -259,10 +260,11 @@
         }
       }
     }
-  }
-  @media screen and (max-width: 1030px) {
     .project-links {
-      width: 85% !important;
+      height: 10% !important ;
+      .btn {
+        font-size: 1rem !important;
+      }
     }
   }
   @media screen and (max-width: 958px) {
@@ -319,20 +321,6 @@
       }
     }
   }
-  // @media only screen and (max-width: 874px) {
-  //   .card {
-  //     // height: 600px !important;
-  //     .project-view {
-  //       height: 55% !important;
-  //     }
-  //     .card-buttons {
-  //       width: 50% !important;
-  //     }
-  //     .card-text {
-  //       height: 45% !important;
-  //     }
-  //   }
-  // }
   @media screen and (max-width: 676px) {
     .card {
       height: 40vh !important;
