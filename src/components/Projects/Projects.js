@@ -36,7 +36,7 @@ const Projects = () => {
           <h2>Projects</h2>
         </div>
       </ScrollableAnchor>
-      <Grid className="container" container>
+      <Grid className=" project-grid container" container>
         <MediaQuery query="(max-device-width: 972px)">
           <div className="card">
             <div className="project-view">
