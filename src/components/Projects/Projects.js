@@ -244,7 +244,7 @@ const Projects = () => {
           </Grid>
           <Grid className="grid-item" item xs={12}>
             <div className="project-info">
-              <Grid container>
+              <Grid className="project-grid" container>
                 <Grid className="project-content" item xs={6}>
                   <div className="project-title">
                     <h3>Clonepen</h3>
