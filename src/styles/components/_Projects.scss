@@ -7,7 +7,7 @@
     width: 95%;
     margin: 0 auto;
   }
-  .MuiGrid-container-1 {
+  .project-grid {
     height: 100%;
     .card {
       margin-bottom: 2rem;
@@ -271,6 +271,7 @@
     .card {
       width: 100%;
       height: 80vh !important;
+
       .project-view {
         .slick-slider {
           height: 100%;

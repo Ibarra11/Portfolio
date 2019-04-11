@@ -568,34 +568,34 @@ template {
   .projects .container {
     width: 95%;
     margin: 0 auto; }
-  .projects .MuiGrid-container-1 {
+  .projects .project-grid {
     height: 100%; }
-    .projects .MuiGrid-container-1 .card {
+    .projects .project-grid .card {
       margin-bottom: 2rem;
       width: 70%;
       margin: 0 auto;
       height: 60vh;
       margin-bottom: 3rem;
       box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important; }
-      .projects .MuiGrid-container-1 .card .card-text {
+      .projects .project-grid .card .card-text {
         background-color: #f7f7f8;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         height: 55%;
         padding: 1rem; }
-        .projects .MuiGrid-container-1 .card .card-text .card-header {
+        .projects .project-grid .card .card-text .card-header {
           text-align: center; }
-          .projects .MuiGrid-container-1 .card .card-text .card-header h3 {
+          .projects .project-grid .card .card-text .card-header h3 {
             font-size: 2.25rem; }
-          .projects .MuiGrid-container-1 .card .card-text .card-header h5 {
+          .projects .project-grid .card .card-text .card-header h5 {
             font-size: 1.25rem; }
-        .projects .MuiGrid-container-1 .card .card-text p {
+        .projects .project-grid .card .card-text p {
           text-align: center;
           font-size: 1.25rem; }
-      .projects .MuiGrid-container-1 .card .project-view {
+      .projects .project-grid .card .project-view {
         height: 45%; }
-        .projects .MuiGrid-container-1 .card .project-view img {
+        .projects .project-grid .card .project-view img {
           width: 100%;
           height: 100%; }
   .projects li.slider-slide {
