@@ -56,7 +56,7 @@ class Header extends Component {
                 <MediaQuery query="(min-device-width: 769px)">
                 <Grid className="grid" container>
                         <Grid className="grid-item animated bounce faster" item sm={6} md={7}>
-                            <div className="  header-title">
+                            <div className="header-title">
                                 <h1>Alan Ibarra</h1>
                                 <h3>Full Stack Web Developer</h3>
                             </div>

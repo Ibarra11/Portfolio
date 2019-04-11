@@ -1,353 +1,378 @@
 .projects {
-    background-color: #375585;
-    h2 {
-        color: $light;
-    }
-    .container {
-        width: 95%;
-        margin: 0 auto;
-    }
-    .grid-item {
-        margin-bottom: 2rem;
-        .project-content {
-            padding-right: 1rem;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
+  background-color: #375585;
+  h2 {
+    color: $light;
+  }
+  .container {
+    width: 95%;
+    margin: 0 auto;
+  }
+  .MuiGrid-container-1 {
+    height: 100%;
+    .card {
+      margin-bottom: 2rem;
+      width: 70%;
+      margin: 0 auto;
+      height: 60vh;
+      margin-bottom: 3rem;
+      box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2),
+        0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+      .card-text {
+        background-color: hsl(240, 6%, 97%);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 55%;
+        padding: 1rem;
+        .card-header {
+          text-align: center;
+          h3 {
+            font-size: 2.25rem;
+          }
+          h5 {
+            font-size: 1.25rem;
+          }
         }
+        p {
+          text-align: center;
+          font-size: 1.25rem;
+        }
+      }
+      .project-view {
+        height: 45%;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
     }
-    .project:last-child {
-        margin-bottom: 0;
+  }
+  li.slider-slide {
+    height: 100%;
+  }
+  .project-img {
+    height: 100%;
+    .project-view {
+      height: 100%;
+      .carousel-container {
+        height: 100%;
+      }
+      div {
+        height: 100%;
+      }
+      .slider-img {
+        height: 100%;
+        img {
+          height: 100%;
+          width: 100%;
+        }
+      }
     }
+  }
+  .grid-item {
+    margin-bottom: 2rem;
+    height: 50vh;
     .project-info {
-        height: 625px;
-        background-color: #F4F4F9;
+      height: 100%;
+      background-color: #f4f4f9;
+      display: flex;
+      flex-direction: column;
+      border-radius: 5px;
+      box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2),
+        0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+      .project-content {
+        background-color: #233343;
         padding: 1rem;
         display: flex;
         flex-direction: column;
-        border-radius: 5px;
-        box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
-        .project-description {
-            p {
-                font-size: 1.5rem;
-                line-height: 1.5rem;
-                margin-bottom: 0.5rem;
-                text-align: justify;
-            }
-        }
-    }
-    li.slider-slide {
+        justify-content: space-between;
         height: 100%;
-    }
-    .project-view {
-        height: 100%;
-        .carousel-container {
-            height: 100%;
-        }
-        div {
-            height: 100%;
-        }
-        .slider-img {
-            height: 100%;
-            img {
-                height: 100%;
-                width: 100%;
-            }
-        }
-    }
-    .slick-arrow {
-        z-index: 5;
-    }
-    .slick-next {
-        right: 15px;
-    }
-    .slick-prev {
-        left: 20px;
-    }
-    .slick-arrow {
-        background-color: black !important;
-        border-radius: 50%;
-    }
-    .slick-prev:before,
-    .slick-next:before {
-        color: white;
-    }
-    .slider-img {
-        height: 100%;
-    }
-    .slick-dots {
-        position: absolute;
-        bottom: 10px;
-    }
-    .project-title {
-        margin-bottom: 1.5rem;
+        color: #fff;
+        border: 3px solid orange;
         h3 {
-            font-size: 2.75rem;
-            text-align: center;
+          font-size: 2.75rem;
+          text-align: center;
         }
         h5 {
-            text-align: center;
-            position: relative;
-            top: 0.2rem;
-            font-size: 1.25rem;
+          text-align: center;
+          margin-top: 0.1rem;
+          font-size: 1.5rem;
         }
-    }
-    .project-links {
-        width: 75%;
-        margin: 0 auto;
-        margin-top: 1.5rem;
-        display: flex;
-        justify-content: center;
-        .btn:link,
-        .btn:visited {
-            margin-right: 1.25rem;
-            padding: 0.75rem 1.25rem;
-            text-decoration: none;
-            background-color: #177E89;
-            border-radius: 5px;
-            font-weight: bold;
-            color: $light;
-            transition: all 1s;
+        .project-title {
+          height: 15%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
         }
-        .btn:hover,
-        .btn:active {
-            background-color: rgba(21, 112, 122, 1);
-            cursor: pointer;
-        }
-    }
-    .card {
-        margin-bottom: 20px;
-        width: 70%;
-        margin: 0 auto;
-        height: 650px;
-        margin-bottom: 3rem;
-        box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
-        .card-text {
-            background-color: #f6f6f7;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            height: 45%;
-            padding: 1rem;
-            .card-header {
-                text-align: center;
-                h3 {
-                    font-size: 2.25rem;
-                }
-                h5 {
-                    font-size: 1.25rem;
-                }
-            }
-            p {
-                text-align: center;
-                font-size: 1.25rem;
-            }
-        }
-        .card-image {
-            height: 55%;
-            img {
-                width: 100%;
-                height: 100%
-            } // background-image: url('../images/header.png');
-            // background-size: auto 100%;
-            // background-position: center;
-        }
-        .card-buttons {
-            display: flex;
-            width: 40%;
-            margin: 0 auto;
-            justify-content: space-between;
-            .btn:link,
-            .btn:visited {
-                padding: 0.75rem 1.25rem;
-                text-decoration: none;
-                background-color: #177E89;
-                border-radius: 5px;
-                font-weight: bold;
-                color: $light;
-                transition: all 1s;
-            }
-            .btn:hover,
-            .btn:active {
-                background-color: rgba(21, 112, 122, 1);
-                cursor: pointer;
-            }
-        }
-    }
-    .features,
-    .project-description {
-        h5 {
-            font-size: 1.75rem;
-        }
-    }
-    .project-description {
-        p {
+        .project-description {
+          height: 45%;
+          p {
             margin-top: 0.5rem;
             line-height: 1.75rem !important;
+            font-size: 1.5rem;
+            line-height: 1.5rem;
+            margin-bottom: 0.5rem;
+            text-align: center;
+          }
         }
-    }
-    .features {
-        .feature-list {
-            padding-left: 15px;
-            list-style: none;
-            li {
-                font-size: 1.25rem;
+      }
+      .project-img {
+        height: 100%;
+        .project-view {
+          height: 100%;
+          .carousel-container {
+            height: 100%;
+          }
+          div {
+            height: 100%;
+          }
+          .slider-img {
+            height: 100%;
+            img {
+              height: 100%;
+              width: 100%;
             }
+          }
         }
-    }
-    .project-tech {
+      }
+      .project-links {
+        width: 75%;
+        margin: 0 auto;
+        height: 15%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+      }
+      .features {
+        .feature-list {
+          padding-left: 15px;
+          list-style: none;
+          li {
+            font-size: 1.25rem;
+          }
+        }
+      }
+      .project-tech {
+        height: 40%;
+        display: flex;
+        justify-content: center;
         h5 {
-            font-size: 1.75rem;
+          font-size: 1.75rem;
         }
         .icon-container {
-            height: 3rem;
-            margin: 0 auto;
-            text-align: center;
-            margin-top: 0.75rem;
+          height: 3rem;
+          margin: 0 auto;
+          text-align: center;
+          margin-top: 0.75rem;
+          img {
+            height: 100%;
+          }
+        }
+      }
+    }
+  }
+  .project:last-child {
+    margin-bottom: 0;
+  }
+  li.slider-slide {
+    height: 100%;
+  }
+  .slick-arrow {
+    z-index: 5;
+  }
+  .slick-next {
+    right: 15px;
+  }
+  .slick-prev {
+    left: 20px;
+  }
+  .slick-arrow {
+    background-color: black !important;
+    border-radius: 50%;
+  }
+  .slick-prev:before,
+  .slick-next:before {
+    color: white;
+  }
+  .slider-img {
+    height: 100%;
+  }
+  .slick-dots {
+    position: absolute;
+    bottom: 10px;
+  }
+
+  @media screen and(max-width: 1592px) {
+    .project-content {
+      h3 {
+        font-size: 2.35rem !important;
+      }
+      h5 {
+        text-align: center;
+        margin-top: 0.1rem;
+        font-size: 1.15rem !important;
+      }
+      .project-description {
+        p {
+          font-size: 1.25rem !important;
+          line-height: 1.75rem;
+        }
+      }
+    }
+    .project-tech {
+      height: 40%;
+      h5 {
+        font-size: 1.75rem;
+      }
+      .icon-container {
+        height: 2rem !important;
+        margin: 0 auto;
+        margin-top: 0.75rem;
+        img {
+          height: 100%;
+        }
+      }
+    }
+  }
+  @media screen and(max-width: 1220px) {
+    .project-content {
+      h3 {
+        font-size: 2.15rem !important;
+      }
+      h5 {
+        font-size: 0.85rem !important;
+      }
+      .project-description {
+        p {
+          font-size: 1rem !important;
+        }
+      }
+    }
+    .project-tech {
+      .icon-container {
+        height: 1.75rem !important;
+        margin: 0 auto;
+        margin-top: 0.75rem;
+        img {
+          height: 100%;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 1030px) {
+    .project-links {
+      width: 85% !important;
+    }
+  }
+  @media screen and (max-width: 958px) {
+    .card {
+      width: 100%;
+      height: 80vh !important;
+      .project-view {
+        .slick-slider {
+          height: 100%;
+          .slick-list {
+            height: 100%;
+          }
+          .slick-track {
+            height: 100%;
+            div {
+              height: 100%;
+            }
+          }
+          .slider-img {
+            height: 100% !important;
             img {
-                height: 100%
+              height: 100% !important;
             }
+          }
         }
-    }
-    @media screen and (max-width: 1030px) {
-        .slider-img {
-            background-color: rgba(0, 0, 0, 0.7)
-        }
-    }
-    @media screen and (max-width: 958px) {
-        .project-info {
-            .project-description {
-                border: 1px solid red;
-                width: 100%;
-                margin: 0 auto;
-            }
-            .project-tech {
-                border: 1px solid red;
-                margin: 0 auto; // text-align: center;
-                .MuiGrid-container-65 {
-                    border: 1px solid orange;
-                    display: flex;
-                    justify-content: space-between;
-                }
-                .MuiGrid-item-66 {
-                    border: 2px solid green;
-                    margin-top: 1rem;
-                }
-                .icon-container {
-                    height: 3.25rem;
-                    margin-top: 0 !important;
-                }
-            }
-        }
-    }
-    @media only screen and (max-width: 874px) {
-        .card {
-            height: 700px !important;
-            .card-buttons {
-                width: 50% !important;
-            }
-        }
-    }
-    @media screen and (max-width: 676px) {
-        .card-image {
-            height: 40% !important;
-        }
-        .card {
-            height: 575px !important;
-            .card-text {
-                height: 60% !important;
-                p {
-                    font-size: 1.1rem !important;
-                }
-            }
-            .card-buttons {
-                width: 70% !important;
-            }
-        }
-    }
-    @media screen and (max-width: 550px) {
-        .card-image {
-            height: 35% !important;
-        }
+      }
+      .card-text {
+        background-color: #233343 !important;
+        color: #fff;
+        border: 2px solid orange;
         .card-header {
-            h3 {
-                font-size: 1.5rem !important;
-            }
-            h5 {
-                font-size: 1.1rem !important;
-            }
+          height: 25%;
+          h3 {
+            font-size: 2rem !important;
+          }
+          h5 {
+            font-size: 1rem !important;
+          }
         }
-        .card {
-            height: 500px !important;
-            .card-text {
-                height: 65% !important;
-                p {
-                    font-size: 1.05rem !important;
-                }
-            }
+        .card-body {
+          height: 60%;
+          padding-top: 0.5rem;
+          p {
+            font-size: 1.05rem !important;
+          }
         }
         .card-buttons {
-            .btn {
-                padding: 10px 6px !important;
-            }
+          height: 15%;
+          display: flex;
+          width: 90% !important;
+          margin: 0 auto;
+          justify-content: space-between;
         }
-        .card {
-            .card-buttons {
-                width: 55% !important;
-            }
-        }
+      }
     }
-    @media screen and (max-width: 434px) {
-        .card {
-            .card-buttons {
-                width: 65% !important;
-            }
-            .card-image {
-                height: 60% !important;
-            }
-            height: 300px !important;
-            .card-text {
-                height: 40% !important;
-                p {
-                    font-size: 0.95rem !important;
-                    display: none;
-                }
-            }
-            .btn {
-                padding: 8px 6px !important;
-            }
+  }
+  // @media only screen and (max-width: 874px) {
+  //   .card {
+  //     // height: 600px !important;
+  //     .project-view {
+  //       height: 55% !important;
+  //     }
+  //     .card-buttons {
+  //       width: 50% !important;
+  //     }
+  //     .card-text {
+  //       height: 45% !important;
+  //     }
+  //   }
+  // }
+  @media screen and (max-width: 676px) {
+    .card {
+      height: 40vh !important;
+      position: relative;
+      width: 85% !important;
+      .project-view {
+        height: 100% !important;
+      }
+      .card-text {
+        background-color: transparent !important;
+        border: none !important;
+        .card-header,
+        .card-body {
+          display: none !important;
         }
-        .card-header {
-            h3 {
-                font-size: 1.5rem !important;
-            }
-            h5 {
-                font-size: 1rem !important;
-            }
+        .card-buttons {
+          position: absolute;
+          bottom: 5%;
+          height: 11%;
+          .btn {
+            font-size: 1rem !important;
+          }
         }
-        .card-image {
-            height: 40% !important;
-        }
+      }
     }
-    @media screen and (max-width: 390px) {
-        .card {
-            .card-header {
-                h3 {
-                    font-size: 1.25rem !important;
-                }
-                h5 {
-                    font-size: 0.9rem !important;
-                }
-            }
-            .card-buttons {
-                width: 80% !important;
-                margin: 0 auto;
-                justify-content: space-between !important;
-            }
-            .btn {
-                padding: 8px !important;
-                margin: 0 !important;
-            }
+  }
+  @media screen and (max-width: 550px) {
+    .card {
+      height: 30vh !important;
+      width: 85% !important;
+      .card-buttons {
+        .btn {
+          width: 30%;
         }
+      }
     }
+  }
+  @media screen and (max-width: 390px) {
+    .card {
+      height: 25vh !important;
+    }
+  }
 }
