@@ -8,9 +8,6 @@
 @import url("https://fonts.googleapis.com/css?family=Ubuntu:400,500");
 @import url(~slick-carousel/slick/slick.css);
 @import url(~slick-carousel/slick/slick-theme.css);
-@import url("https://fonts.googleapis.com/css?family=Ubuntu:400,500");
-@import url("https://fonts.googleapis.com/css?family=Ubuntu:400,500");
-@import url("https://fonts.googleapis.com/css?family=Ubuntu:400,500");
 html {
   line-height: 1.15;
   /* 1 */
@@ -540,7 +537,7 @@ template {
     cursor: pointer; }
 
 .skills {
-  background-color: #FEFFFE; }
+  background-color: #fefffe; }
   .skills .skills-content .grid-container {
     width: 95%;
     margin: 0 auto; }
@@ -862,11 +859,12 @@ template {
       border-radius: 5px;
       font-weight: bold;
       color: #f6f6f7;
-      background-color: #177E89;
+      background-color: #177e89;
       border: none;
       font-size: 1.35rem;
       transition: all 1s; }
-    .contact .form button:hover, .contact .form button:active {
+    .contact .form button:hover,
+    .contact .form button:active {
       cursor: pointer;
       background-color: #15707a; }
   @media only screen and (max-width: 876px) {

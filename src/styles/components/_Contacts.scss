@@ -1,97 +1,97 @@
-@import '../variables';
 .contact {
-    background-color: #303841;
-    h2 {
-        color: $light;
+  background-color: #303841;
+  h2 {
+    color: $light;
+  }
+  .form {
+    // padding: 1rem;
+    // padding-top: 0;
+    width: 55%;
+    margin: 0 auto;
+    .form-inputs {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
+    .form-group {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    input {
+      padding: 16px 5px;
+      width: 100%;
+      margin-bottom: 1rem;
+      border-radius: 5px;
+    }
+    h5 {
+      font-size: 1.5rem;
+      color: $light;
+      margin-bottom: 0.75rem;
+    }
+    textarea {
+      width: 100%;
+      border-radius: 5px;
+      height: 125px;
+      padding: 5px;
+    }
+    .form-submit {
+      margin-top: 1rem;
+      display: flex;
+      width: 100%;
+      justify-content: flex-end;
+    }
+    button {
+      width: 40%;
+      font-size: 1.25rem;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      font-weight: bold;
+      color: $light;
+      background-color: #177e89;
+      border: none;
+      font-size: 1.35rem;
+      transition: all 1s;
+    }
+
+    button:hover,
+    button:active {
+      cursor: pointer;
+      background-color: rgba(21, 112, 122, 1);
+    }
+  }
+  @media only screen and (max-width: 876px) {
     .form {
-        // padding: 1rem;
-        // padding-top: 0;
-        width: 55%;
-        margin: 0 auto;
-        .form-inputs {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        .form-group {
-            height: 100%;
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-        }
-        input {
-            padding: 16px 5px;
-            width: 100%;
-            margin-bottom: 1rem;
-            border-radius: 5px;
-        }
-        h5 {
-            font-size: 1.5rem;
-            color: $light;
-            margin-bottom: 0.75rem;
-        }
-        textarea {
-            width: 100%;
-            border-radius: 5px;
-            height: 125px;
-            padding: 5px;
-        }
-        .form-submit {
-            margin-top: 1rem;
-            display: flex;
-            width: 100%;
-            justify-content: flex-end;
-        }
-        button {
-            width: 40%;
-            font-size: 1.25rem;
-            padding: 0.5rem 1rem;
-            border-radius: 5px;
-            font-weight: bold;
-            color: $light;
-            background-color: #177E89;
-            border: none;
-            font-size: 1.35rem;
-            transition: all 1s;
-        }
+      width: 65% !important;
+    }
+    button {
+      width: 50% !important;
+    }
+  }
 
-        button:hover, button:active{
-            cursor: pointer;
-            background-color: rgba(21, 112, 122, 1); 
-        }
+  @media only screen and (max-width: 592px) {
+    .form {
+      width: 80% !important;
     }
-    @media only screen and (max-width: 876px) {
-        .form {
-            width: 65% !important;
-        }
-        button {
-            width: 50% !important;
-        }
+    h5 {
+      font-size: 1.5rem !important;
     }
+    button {
+      font-size: 1.25rem !important;
+      width: 60% !important;
+      margin: 0 auto;
+    }
+  }
 
-    @media only screen and (max-width: 592px) {
-        .form {
-            width: 80% !important;
-        }
-        h5{
-            font-size: 1.5rem !important;
-        }
-        button {
-            font-size: 1.25rem !important;
-            width: 60% !important;
-            margin: 0 auto;
-        }
+  @media only screen and (max-width: 592px) {
+    .form {
+      width: 90% !important;
     }
-
-    @media only screen and (max-width: 592px) {
-        .form {
-            width: 90% !important;
-        }
-        button {
-            font-size: 1.1rem !important;
-            width: 60% !important;
-            margin: 0 auto;
-        }
+    button {
+      font-size: 1.1rem !important;
+      width: 60% !important;
+      margin: 0 auto;
     }
+  }
 }
