@@ -64,9 +64,7 @@ const Projects = () => {
                 <p>
                   Trucking Manager is a web application built to assist trucking
                   companies in efficiently running their business. Some features
-                  of this application include charts to display metrics such as
-                  expenses, income, payroll, and revenue. A dispatch system that
-                  allows users to send job information to their drivers.
+                  of this application include charts to display metrics and a dispatch system.  
                 </p>
               </div>
               <div className="card-buttons">
@@ -111,13 +109,11 @@ const Projects = () => {
               </div>
               <div className="card-body">
                 <p>
-                  Clonepen is a clone of the popular front end development site
-                  codepen.io. This project was developed with a group of three
-                  other developers. Some of the main features of this
-                  application include secure authentication and registration
-                  using bcrypt. A text editor where users are able to view,
-                  save, and edit pens. A drag and drop feature where users can
-                  customize their showcase of pens.
+                      Clonepen is a clone of the popular front end development
+                      site codepen.io. This project was developed with a group
+                      of three other developers.  Some of the main features of this application include a text editor where users are
+                      able to view, save, and edit their pens, and a drag and drop
+                      feature where users can customize their showcase of pens.
                 </p>
               </div>
               <div className="card-buttons">
@@ -150,12 +146,10 @@ const Projects = () => {
                   </div>
                   <div className="project-description">
                     <p>
-                      Trucking Manager is a web application built to assist
-                      trucking companies in efficiently running their business.
-                      Some features of this application include charts to
-                      display metrics such as expenses, income, payroll, and
-                      revenue. A dispatch system that allows users to send job
-                      information to their drivers.
+                    Trucking Manager is a web application built to assist trucking
+                  companies in efficiently running their business.  Some features of this applicaiton include tables
+                  for data recording, charts to display metrics (expenses, income, payroll, revenue) , and
+                   a dispatch system to send jobs to drivers.     
                     </p>
                   </div>
                   <div className="project-tech">
@@ -252,10 +246,8 @@ const Projects = () => {
                     <p>
                       Clonepen is a clone of the popular front end development
                       site codepen.io. This project was developed with a group
-                      of three other developers. Some of the main features of
-                      this application include secure authentication and
-                      registration using bcrypt. A text editor where users are
-                      able to view, save, and edit their pens. A drag and drop
+                      of three other developers.  Some of the main features of this application include a text editor where users are
+                      able to view, save, and edit their pens, and a drag and drop
                       feature where users can customize their showcase of pens.
                     </p>
                   </div>
