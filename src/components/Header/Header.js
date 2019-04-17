@@ -28,6 +28,7 @@ class Header extends Component {
     displayNav = () =>{
         this.setState({displayNav: !this.state.displayNav})
     }
+
     render() {
         return (
             <ScrollableAnchor id={'home'}>
@@ -88,7 +89,7 @@ class Header extends Component {
                                     them to life is one of the most rewarding feelings.  </p>
                     </div>
                     <div className="header-responsive-headshot">
-                        <img src={Headshot} alt="heashto"/>
+                        <img src={Headshot} alt="headshot"/>
                     </div> 
                 </div>
                 </MediaQuery > 

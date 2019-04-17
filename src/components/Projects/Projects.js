@@ -149,7 +149,6 @@ const Projects = () => {
                     <h5>Personal Project</h5>
                   </div>
                   <div className="project-description">
-                    {/* <h5>Project Summary</h5> */}
                     <p>
                       Trucking Manager is a web application built to assist
                       trucking companies in efficiently running their business.
@@ -160,7 +159,6 @@ const Projects = () => {
                     </p>
                   </div>
                   <div className="project-tech">
-                    {/* <h5>Technoligies Used</h5> */}
                     <Grid className="icon-grid" container>
                       <Grid item md={3}>
                         <div className="icon-container">
@@ -251,7 +249,6 @@ const Projects = () => {
                     <h5>Group Project</h5>
                   </div>
                   <div className="project-description">
-                    {/* <h5>Project Summary</h5> */}
                     <p>
                       Clonepen is a clone of the popular front end development
                       site codepen.io. This project was developed with a group
@@ -263,7 +260,6 @@ const Projects = () => {
                     </p>
                   </div>
                   <div className="project-tech">
-                    {/* <h5>Technoligies Used</h5> */}
                     <Grid container className="icon-grid">
                       <Grid item md={4}>
                         <div className="icon-container">
@@ -280,7 +276,6 @@ const Projects = () => {
                           <img src={sassIcon} alt="Sass Icon" />
                         </div>
                       </Grid>
-                      {/* <Grid item md={3} /> */}
                       <Grid item md={4}>
                         <div className="icon-container">
                           <img src={nodeIcon} alt="Node Icon" />
